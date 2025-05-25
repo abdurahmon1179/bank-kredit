@@ -159,15 +159,19 @@ section {
     height: 400px;
     background: linear-gradient(to bottom right, #00b24145 0%, #00b24152 50%, transparent 50%, transparent 100%);
     clip-path: path("M0 0H104.426L159.1 126.087C163.502 136.239 163.502 147.761 159.1 157.913L104.426 284H0V0Z");
-      -webkit-clip-path: path("M0 0H104.426L159.1 126.087C163.502 136.239 163.502 147.761 159.1 157.913L104.426 284H0V0Z");
-    opacity: 0;
-    transition: opacity 0.3s;
+    -webkit-clip-path: path("M0 0H104.426L159.1 126.087C163.502 136.239 163.502 147.761 159.1 157.913L104.426 284H0V0Z");
+    transform: scaleX(0); /* o‘zgartirildi */
+    transform-origin: left; /* chapdan boshlasin */
+    transition: transform 0.4s ease-out;
     z-index: 0;
+    opacity: 1;
 }
 
 .service-card:hover::before {
-    opacity: 1;
+    transform: scaleX(1);
 }
+
+
 
 
 .service-card-text,

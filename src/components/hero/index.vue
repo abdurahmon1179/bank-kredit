@@ -409,20 +409,12 @@ import Container from "../layouts/index.vue"
 import { ref } from 'vue'
 import ApexCharts from 'apexcharts'
 
-
-
 defineExpose({ ApexCharts })
-
 
 const series = ref([
   {
-    name: 'XYZ MOTORS',
-    data: [
-      [new Date('2023-01-01').getTime(), 5000000],
-      [new Date('2023-02-01').getTime(), 6000000],
-      [new Date('2023-03-01').getTime(), 7000000],
-      [new Date('2023-04-01').getTime(), 8000000]
-    ]
+    name: 'Tovar Narxi',
+    data: [20.0, 21.0, 22.0, 22.5]
   }
 ])
 
@@ -431,20 +423,24 @@ const chartOptions = ref({
     type: 'area',
     stacked: false,
     zoom: {
-      type: 'x',
       enabled: true,
-      autoScaleYaxis: true
+      type: 'x',
+      autoScaleYaxis: false
     },
     toolbar: {
-      show:false,
-      autoSelected: 'zoom'
+      show: false
     }
   },
+
   dataLabels: {
     enabled: false
   },
+
   markers: {
-    size: 0
+    size: 4,
+    colors: ['#00b241'],
+    strokeColors: '#fff',
+    strokeWidth: 2
   },
 
   fill: {
@@ -457,23 +453,37 @@ const chartOptions = ref({
       stops: [0, 90, 100]
     }
   },
+
   yaxis: {
+    min: 20,
+    max: 22.5,
+    tickAmount: 6,
     labels: {
-      formatter: val => (val / 1000000).toFixed(0)
-    },
-    title: {
-      text: 'Price'
+      formatter: val => val.toFixed(1)
     }
   },
+
   xaxis: {
-    type: 'datetime'
+    type: 'category',
+    categories: ['2022', '2023', '2024', '2025'],
+    labels: {
+      style: {
+        fontSize: '12px'
+      }
+    }
   },
+
   tooltip: {
     shared: false,
     y: {
-      formatter: val => (val / 1000000).toFixed(0)
-    }
+      formatter: val => val.toFixed(2)
+    },
+  },
+
+  legend: {
+    show: true,
+    position: 'top',
+    horizontalAlign: 'left'
   }
-  
 })
 </script>
