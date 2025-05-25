@@ -144,6 +144,38 @@ section {
     flex-wrap: wrap;
     gap: 24px;
 }
+.service-card {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to bottom right, #00b24145 0%, #00b24152 50%, transparent 50%, transparent 100%);
+    clip-path: path("M0 0H104.426L159.1 126.087C163.502 136.239 163.502 147.761 159.1 157.913L104.426 284H0V0Z");
+      -webkit-clip-path: path("M0 0H104.426L159.1 126.087C163.502 136.239 163.502 147.761 159.1 157.913L104.426 284H0V0Z");
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+
+.service-card-text,
+.service-img {
+    position: relative;
+    z-index: 1;
+}
+
 </style>
 
 <script setup>

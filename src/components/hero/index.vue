@@ -19,60 +19,60 @@
                         </div>
                     </div>
                     <div class="country-currency-card">
-                        <img src="../../../public/images/usa.svg" alt="">
+                        <img class="country-flag" src="../../../public/images/usa.svg" alt="">
                         <div class="usa-currency">
                             <p>USD = 12920.16</p>
                             <span style="color: #D32F2F;">-13</span>
                         </div>
-                        <img src="../../../public/images/minus.svg" alt="">
+                        <img class="graph" src="../../../public/images/minus.svg" alt="">
                     </div>
                     <div class="country-currency-card">
-                        <img src="../../../public/images/euro.svg" alt="">
+                        <img class="country-flag" src="../../../public/images/euro.svg" alt="">
                         <div class="usa-currency">
                             <p>EUR = 14681.18</p>
                             <span style="color: #D32F2F;">-38.05</span>
                         </div>
-                        <img src="../../../public/images/minus.svg" alt="">
+                        <img class="graph" src="../../../public/images/minus.svg" alt="">
                     </div>
                     <div class="country-currency-card">
-                        <img src="../../../public/images/rossia.svg" alt="">
+                        <img class="country-flag" src="../../../public/images/rossia.svg" alt="">
                         <div class="usa-currency">
                             <p>RUB = 158.61</p>
                             <span style="color: #009423;">+0.33</span>
                         </div>
-                        <img src="../../../public/images/plus.svg" alt="">
+                        <img class="graph" src="../../../public/images/plus.svg" alt="">
                     </div>
                     <div class="country-currency-card">
-                        <img src="../../../public/images/uk.svg" alt="">
+                        <img class="country-flag" src="../../../public/images/uk.svg" alt="">
                         <div class="usa-currency">
                             <p>GBP = 17262.63</p>
                             <span style="color: #D32F2F;">-61.34</span>
                         </div>
-                        <img src="../../../public/images/minus.svg" alt="">
+                        <img class="graph" src="../../../public/images/minus.svg" alt="">
                     </div>
                     <div class="country-currency-card">
-                        <img src="../../../public/images/japan.svg" alt="">
+                        <img class="country-flag" src="../../../public/images/japan.svg" alt="">
                         <div class="usa-currency">
                             <p>JPY = 90.28</p>
                             <span style="color: #D32F2F;">-61.34</span>
                         </div>
-                        <img src="../../../public/images/minus.svg" alt="">
+                        <img class="graph" src="../../../public/images/minus.svg" alt="">
                     </div>
                     <div class="country-currency-card">
-                        <img src="../../../public/images/switzerland.svg" alt="">
+                        <img class="country-flag" src="../../../public/images/switzerland.svg" alt="">
                         <div class="usa-currency">
                             <p>CHF = 1564.52</p>
                             <span style="color: #D32F2F;">-61.34</span>
                         </div>
-                        <img src="../../../public/images/minus.svg" alt="">
+                        <img class="graph" src="../../../public/images/minus.svg" alt="">
                     </div>
                     <div class="country-currency-card">
-                        <img src="../../../public/images/china.svg" alt="">
+                        <img class="country-flag" src="../../../public/images/china.svg" alt="">
                         <div class="usa-currency">
                             <p>CNY = 1778.66</p>
                             <span style="color: #009423;">+0.07</span>
                         </div>
-                        <img src="../../../public/images/plus.svg" alt="">
+                        <img class="graph" src="../../../public/images/plus.svg" alt="">
                     </div>
                 </div>
 
@@ -160,7 +160,7 @@
                                 <div class="stat-line-graph">
                                     <h3>O‘rtacha tortilgan foiz stavkalar</h3>
                                     <div>
-                                        <apexchart width="320px" height="350" type="area" :options="chartOptions"
+                                        <apexchart width="320px" height="340" type="area" :options="chartOptions"
                                             :series="series" />
                                     </div>
                                     <div></div>
@@ -235,6 +235,7 @@ section {
     background-color: white;
     border: 1px solid #F0F0F0;
     display: flex;
+    align-items: center;
     gap: 16px;
     height: 64px;
 }
@@ -279,7 +280,7 @@ section {
     padding: 16px;
     background-color: #F9F9F9;
     width: 330px;
-    height: 440px;
+    height: 450px;
     border-radius: 8px;
     border: 1px solid #E9E9E9;
 }
@@ -337,10 +338,10 @@ section {
     margin-top: 19px;
     background-color: white;
     width: 270px;
-    height: 187px;
+    height: 177px;
     border: 1px solid #E9E9E9;
     border-radius: 8px;
-    padding: 16px;
+    padding: 10px;
 }
 
 .stats-year-card>div {
@@ -382,11 +383,23 @@ section {
     background-color: white;
     border: 1px solid #E9E9E9;
     border-radius: 8px;
+    height: 370px;
 }
 
 .stat-line-graph > h3{
     padding-left: 20px;
+    padding-top: 10px;
 }
+.country-flag{
+    width: 32px;
+    height: 24px;
+}
+
+.graph{
+    width: 33px;
+    height: 20px;
+}
+
 </style>
 
 
@@ -423,6 +436,7 @@ const chartOptions = ref({
       autoScaleYaxis: true
     },
     toolbar: {
+      show:false,
       autoSelected: 'zoom'
     }
   },
@@ -460,5 +474,6 @@ const chartOptions = ref({
       formatter: val => (val / 1000000).toFixed(0)
     }
   }
+  
 })
 </script>
