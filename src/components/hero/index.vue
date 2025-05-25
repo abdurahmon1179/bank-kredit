@@ -2,7 +2,7 @@
     <section>
         <Container>
             <div class="hero-title">
-                <h1>Biz bilan Tadbirkorlikni <span style="color: #00B241;">rivojlantiring!</span></h1>
+                <h1>BIZ BILAN TADBIRKORLIKNI <span style="color: #00B241;">RIVOJLANTIRING!</span></h1>
             </div>
 
 
@@ -112,7 +112,7 @@
                                 <h3>Milliy valyuta</h3>
                                 <p>O‘zbekiston bank tizimi tomonidan saqlanayotgan majburiy zahiralari</p>
                                 <div>
-                                    <p><span>135</span>trallion so'm</p>
+                                    <p><span>135</span>Trilliyon so‘m</p>
                                 </div>
                             </div>
 
@@ -120,7 +120,7 @@
                                 <h3>Milliy valyuta</h3>
                                 <p>O‘zbekiston bank tizimi tomonidan saqlanayotgan majburiy zahiralari</p>
                                 <div>
-                                    <p><span>789</span>trallion so'm</p>
+                                    <p><span>789</span>Trilliyon so‘m</p>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                                         <apexchart width="320px" height="340" type="area" :options="chartOptions"
                                             :series="series" />
                                     </div>
-                                    <div></div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -263,13 +263,20 @@ section {
     border-radius: 8px;
     border: 1px solid #E9E9E9;
 }
-
+.card-text > h3{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: -15px;
+}
 .card-text {
     display: flex;
     justify-content: space-between;
-    margin-top: 26px;
+    margin-top: 20px;
 }
-
+.card-text > p{
+    font-size: 18px;
+    font-weight: 500;
+}
 .section-wrapper {
     margin-top: 24px;
     display: flex;

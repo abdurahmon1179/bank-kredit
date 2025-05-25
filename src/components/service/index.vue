@@ -20,7 +20,7 @@
                     </div>
                 </div>
 
-                <div class="service-card">
+                <div class="service-card card-hover">
                     <div class="service-card-text">
                         <h3>Moliyaviy savodxonlik</h3>
                         <p>Pulni to‘g‘ri boshqarishni o‘rganing.
@@ -34,7 +34,7 @@
                         <img src="../../../public/images/service2.svg" alt="">
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card card-hover">
                     <div class="service-card-text">
                         <h3>Murojaat qoldirish</h3>
                         <p>Savolingiz, taklifingiz yoki muammoyingiz bormi? Biz har doim eshitishga tayyormiz.
@@ -180,6 +180,34 @@ section {
     z-index: 1;
 }
 
+
+
+.card-hover {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to bottom right, #d5edfb 0%, #d5edfb, transparent 50%, transparent 100%);
+    clip-path: path("M0 0H104.426L159.1 126.087C163.502 136.239 163.502 147.761 159.1 157.913L104.426 284H0V0Z");
+    -webkit-clip-path: path("M0 0H104.426L159.1 126.087C163.502 136.239 163.502 147.761 159.1 157.913L104.426 284H0V0Z");
+    transform: scaleX(0); /* o‘zgartirildi */
+    transform-origin: left; /* chapdan boshlasin */
+    transition: transform 0.4s ease-out;
+    z-index: 0;
+    opacity: 1;
+}
+
+.card-hover:hover::before {
+    transform: scaleX(1);
+}
 </style>
 
 <script setup>

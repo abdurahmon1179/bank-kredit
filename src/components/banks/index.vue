@@ -14,7 +14,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -25,7 +26,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -35,7 +37,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -45,7 +48,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -71,7 +75,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -82,7 +87,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -92,7 +98,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -102,7 +109,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -128,7 +136,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -139,7 +148,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -149,7 +159,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -159,7 +170,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -183,7 +195,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -194,7 +207,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -204,7 +218,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -214,7 +229,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -240,7 +256,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -251,7 +268,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -261,7 +279,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -271,7 +290,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -296,7 +316,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -307,7 +328,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -317,7 +339,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -327,7 +350,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -353,7 +377,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -364,7 +389,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -374,7 +400,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -384,7 +411,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -410,7 +438,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -421,7 +450,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -431,7 +461,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -441,7 +472,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -468,7 +500,8 @@
                     <div class="bank-data-wrapper">
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/call.svg" alt="">
+                                <img class="default-img" src="../../../public/images/tel.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/call.svg" alt="">
                                 <p>Telefon raqam:</p>
                             </div>
                             <div>
@@ -479,7 +512,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/asist.svg" alt="">
+                                <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/asist.svg" alt="">
                                 <p>Aloqa markazi:</p>
                             </div>
                             <div>
@@ -489,7 +523,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/adres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/location.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
                                 <p>Manzili:</p>
                             </div>
                             <div>
@@ -499,7 +534,8 @@
 
                         <div class="bank-phone">
                             <div class="phone-number">
-                                <img src="../../../public/images/eadres.svg" alt="">
+                                <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
+                                <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
                                 <p>E-manzil:</p>
                             </div>
                             <div>
@@ -601,7 +637,7 @@
     width: 181px;
     height: 48px;
     background-color: white;
-    border: none;
+    border: 1px solid #F0F0F0;
     border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
@@ -616,6 +652,20 @@
 .bank-card:hover > button {
     background-color: #00B241;
 }
+
+
+.bank-card .hover-img {
+    display: none;
+}
+
+.bank-card:hover .default-img {
+    display: none;
+}
+
+.bank-card:hover .hover-img {
+    display: inline-block;
+}
+
 
 </style>
 

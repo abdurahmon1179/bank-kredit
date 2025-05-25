@@ -41,7 +41,7 @@
             <hr>
             <div class="footer-second">
                 <p>Caroselling Copyright 2025</p>
-                <p>Realsoft</p>
+                <p style="text-decoration: underline;">Realsoft</p>
             </div>
         </footer>
     </Container>
@@ -85,6 +85,14 @@ footer{
     background-color: white;
     border-radius: 8px;
     padding: 20px;
+}
+.info-email > p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.info-adres > p{
+    font-size: 22px;
+    font-weight: 500;
 }
 .info-adres{
     width: 770px;

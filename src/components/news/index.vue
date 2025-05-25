@@ -21,11 +21,14 @@
                         </div>
                         <h3>{{ item.title }}</h3>
                         <p>{{ item.text }}</p>
+                        <div class="hover-item">
+                            <img src="../../../public/images/hoverst.svg" alt="">
+                        </div>
                     </div>
                 </SwiperSlide>
             </Swiper>
             <div class="list-news">
-                <button>Barcha Yangiliklar</button>
+                <button style="cursor: pointer;">Barcha Yangiliklar</button>
             </div>
         </div>
     </section>
@@ -52,11 +55,12 @@ section {
 .section-title {
     display: flex;
     justify-content: center;
-    font-size: 40px;
-    font-weight: 600;
     margin-bottom: 40px;
 }
-
+.section-title > h2{
+    font-size: 40px;
+    font-weight: 600;
+}
 .news-card {
     width: 342px;
     height: 388px;
@@ -115,6 +119,54 @@ section {
     border: 1px solid #F0F0F0;
     background-color: #F9F9F9;
 }
+
+::v-deep(.swiper-button-next),
+::v-deep(.swiper-button-prev) {
+    width: 48px !important;
+    height: 48px !important;
+    border: 1px solid #F0F0F0;
+    background-color: white !important;
+    border-radius: 50% !important;
+    color: black !important;
+}
+
+::v-deep(.swiper-button-next:hover),
+::v-deep(.swiper-button-prev:hover) {
+    background-color: #00B241;
+    color: white;
+}
+
+::v-deep(.swiper-button-next::after),
+::v-deep(.swiper-button-prev::after) {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.news-card:hover h3 {
+    color: #00B241;
+}
+
+
+.hover-item{
+    background-color: #00B241;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    right: 60px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.news-card:hover .hover-item {
+    display: flex;
+}
+
 </style>
 
 <script setup>

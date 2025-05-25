@@ -11,15 +11,15 @@
                     <div class="nav-menu">
                         <div class="nav-menu-card">
                             <img src="../../../public/images/home.svg" alt="">
-                            <p>Kredit maxsulotlar</p>
+                            <p>KREDIT MAHSULOTLAR</p>
                         </div>
                         <div class="nav-menu-card">
                             <img src="../../../public/images/message.svg" alt="">
-                            <p>Ariza yuborish</p>
+                            <p>ARIZA YUBORISH</p>
                         </div>
                         <div class="nav-menu-card">
                             <img src="../../../public/images/checkmessage.svg" alt="">
-                            <p>Arizani tekshirish</p>
+                            <p>ARIZANI TEKSHIRISH</p>
                         </div>
                     </div>
                     <div class="nav-actions">
@@ -31,7 +31,7 @@
                             </select>
                         </div>
                         <button>
-                            <p>Kirish</p>
+                            <p>KIRISH</p>
                             <img src="../../../public/images/account.svg" alt="">
                         </button>
                     </div>
@@ -40,7 +40,7 @@
         </Container>
         <hr>
         <ul class="header-menu">
-            <li class="active" style="color: black;">Bosh sahifa</li>
+            <li>Bosh sahifa</li>
             <li>Banklar</li>
             <li>Murojaat</li>
             <li>Ariza qoldirish</li>
@@ -82,6 +82,7 @@ nav {
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
+    border: 1px solid #F0F0F0;
 }
 
 .nav-actions {
@@ -130,15 +131,42 @@ nav {
     justify-content: center;
     align-items: center;
     height: 56px;
+    width: 1370px;
 }
 
-.header-menu > li{
-    color: #626262;
+.header-menu > li {
+    position: relative;
+    display: inline-block;
     cursor: pointer;
+    color:#626262;
+}
+
+.header-menu > li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+.header-menu > li:hover {
+    color: black;
+}
+
+.header-menu > li:hover::after {
+    width: 100%;
 }
 
 .active{
     text-decoration: underline;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #F0F0F0;
 }
 </style>
 
