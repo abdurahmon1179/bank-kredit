@@ -1,52 +1,52 @@
 <template>
     <Container>
-        <footer>
-            <div class="footer-first">
-                <div class="footer-menu">
-                    <h2>Kontaktlar</h2>
-                    <div class="social-media">
-                        <img src="../../../public/images/insta.svg" alt="">
-                        <img src="../../../public/images/youtube.svg" alt="">
-                        <img src="../../../public/images/telegram.svg" alt="">
-                    </div>
-                    <p>Bank-kredit.uz - Тадбиркорлик субъектлари учун тижорат банклари томонидан таклиф қилинаётган кредит маҳсулотлари, хизматларини ўз ичига олган платформа.</p>
-                </div>
-                <div class="footer-info">
-                    <div class="cards">
-                        <div class="info-email">
-                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 40px;">
-                                <img src="../../../public/images/info.svg" alt="">
-                                <p>Elektron manzil</p>
-                            </div>
-                            <p>info@bank-kredit.uz</p>
-                        </div>
-
-                        <div class="info-email">
-                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 40px;">
-                                <img src="../../../public/images/callf.svg" alt="">
-                                <p>telefon raqam</p>
-                            </div>
-                            <p>+998 71 200 00 44</p>
-                        </div>
-                    </div>
-                    <div class="info-adres">
-                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 40px;">
-                            <img src="../../../public/images/loc.svg" alt="">
-                            <p>Manzil</p>
-                        </div>
-                        <p>Кичик Халқа Йўли 38/1, 100084, Тошкент, Тошкент, Ўзбекистон</p>
-                    </div>
-                </div>
+      <footer>
+        <div class="footer-first">
+          <div class="footer-menu">
+            <h2>{{ $t("footer.kontaktlar") }}</h2>
+            <div class="social-media">
+              <img src="../../../public/images/insta.svg" alt="Instagram">
+              <img src="../../../public/images/youtube.svg" alt="YouTube">
+              <img src="../../../public/images/telegram.svg" alt="Telegram">
             </div>
-            <hr>
-            <div class="footer-second">
-                <p>Caroselling Copyright 2025</p>
-                <p style="text-decoration: underline;">Realsoft</p>
+            <p>{{ $t("footer.description") }}</p>
+          </div>
+          <div class="footer-info">
+            <div class="cards">
+              <div class="info-email">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 40px;">
+                  <img src="../../../public/images/info.svg" alt="info icon">
+                  <p>{{ $t("footer.emailLabel") }}</p>
+                </div>
+                <p>info@bank-kredit.uz</p>
+              </div>
+  
+              <div class="info-email">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 40px;">
+                  <img src="../../../public/images/callf.svg" alt="call icon">
+                  <p>{{ $t("footer.phoneLabel") }}</p>
+                </div>
+                <p>+998 71 200 00 44</p>
+              </div>
             </div>
-        </footer>
+            <div class="info-adres">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 40px;">
+                <img src="../../../public/images/loc.svg" alt="location icon">
+                <p>{{ $t("footer.addressLabel") }}</p>
+              </div>
+              <p>{{ $t("footer.address") }}</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-second">
+          <p>{{ $t("footer.copyright") }}</p>
+          <p style="text-decoration: underline;">Realsoft</p>
+        </div>
+      </footer>
     </Container>
-</template>
-
+  </template>
+  
 <style scoped>
 footer{
     margin-top: 80px;

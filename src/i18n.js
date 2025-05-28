@@ -81,7 +81,32 @@ const messages = {
         email: "Elektronmanzil@gmail.com",
         button: "Bank Sahifasi"
       }
-    }
+    },
+    news: {
+      Songgi: "So‘nggi",
+      yangiliklar: "yangiliklar",
+      BarchaYangiliklar: "Barcha Yangiliklar",
+      title1: "Saudiya arabistonida muhim kelishuvga erishdi",
+      text1: "Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.",
+      title2: "\"O‘zmilliybank\" AJ va Xitoy Eksimbanki o‘rtasida 2 mlrd...",
+      text2: "Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.",
+      title3: "\"Asakabank\" AJ Xitoyning Zheshang banki bilan hamkor....",
+      text3: "Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.",
+      title4: "Yangi loyiha ishga tushirildi",
+      text4: "O‘zbekiston hukumati yangi texnopark qurilishi haqida e’lon qildi.",
+      title5: "Bank sohasida raqamli transformatsiya",
+      text5: "Banklar mijozlar uchun yangi onlayn xizmatlarni ishga tushirmoqda.",
+      BarchaYangiliklar: "Barcha Yangiliklar"
+    },
+    footer: {
+      kontaktlar: "Kontaktlar",
+      description: "Bank-kredit.uz - Tadbirkorlik subyektlari uchun tijorat banklari tomonidan taklif qilinayotgan kredit mahsulotlari, xizmatlarini o‘z ichiga olgan platforma.",
+      emailLabel: "Elektron manzil",
+      phoneLabel: "Telefon raqam",
+      addressLabel: "Manzil",
+      address: "Kichik Halqa Yo‘li 38/1, 100084, Toshkent, Toshkent, O‘zbekiston",
+      copyright: "Caroselling mualliflik huquqi 2025"
+    }    
   },
 
   ru: {
@@ -164,7 +189,35 @@ const messages = {
         email: "Elektronmanzil@gmail.com",
         button: "Страница банка"
       }
+    },
+    news: {
+      Songgi: "Последние",
+      yangiliklar: "новости",
+      BarchaYangiliklar: "Все новости",
+      title1: "Саудовская Аравия достигла важного соглашения",
+      text1: "11–13 мая в Джидде прошло 48-е собрание Группы Исламского банка развития.",
+
+      title2: "Между АО «Узнацбанк» и Эксимбанком Китая подписано соглашение на 2 млрд...",
+      text2: "11–13 мая в Джидде прошло 48-е собрание Группы Исламского банка развития.",
+
+      title3: "АО «Асакабанк» начинает сотрудничество с банком Чжэшан из Китая...",
+      text3: "11–13 мая в Джидде прошло 48-е собрание Группы Исламского банка развития.",
+      title4: "Запущен новый проект",
+      text4: "Правительство Узбекистана объявило о строительстве нового технопарка.",
+      title5: "Цифровая трансформация в банковской сфере",
+      text5: "Банки запускают новые онлайн-сервисы для клиентов.",
+      BarchaYangiliklar: "Все новости"
+    },
+    footer: {
+      kontaktlar: "Контакты",
+      description: "Bank-kredit.uz - платформа, включающая кредитные продукты и услуги, предлагаемые коммерческими банками для субъектов предпринимательства.",
+      emailLabel: "Электронная почта",
+      phoneLabel: "Телефон",
+      addressLabel: "Адрес",
+      address: "Кичик Халка Йули 38/1, 100084, Ташкент, Узбекистан",
+      copyright: "Авторские права Caroselling 2025"
     }
+    
   }
 };
 

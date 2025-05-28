@@ -1,38 +1,102 @@
 <template>
     <section>
-        <div class="news-section">
-            <div class="section-title">
-                <h2>So‘nggi <span style="color: #00B241;">yangiliklar</span></h2>
-            </div>
-            <Swiper :modules="[Navigation]" :slides-per-view="3" :space-between="30" :loop="true" navigation
-                pagination class="my-swiper">
-                <SwiperSlide v-for="(item, index) in news" :key="index" class="news-wrapper">
-                    <div class="news-card">
-                        <img :src="item.image" alt="">
-                        <div class="news-time">
-                            <div>
-                                <img src="../../../public/images/newcalendar.svg" alt="">
-                                <p>{{ item.date }}</p>
-                            </div>
-                            <div>
-                                <img src="../../../public/images/eye.svg" alt="">
-                                <p>{{ item.views }}</p>
-                            </div>
-                        </div>
-                        <h3>{{ item.title }}</h3>
-                        <p>{{ item.text }}</p>
-                        <div class="hover-item">
-                            <img src="../../../public/images/hoverst.svg" alt="">
-                        </div>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
-            <div class="list-news">
-                <button style="cursor: pointer;">Barcha Yangiliklar</button>
-            </div>
+      <div class="news-section">
+        <div class="section-title">
+          <h2>{{ t("So‘nggi") }} <span style="color: #00B241;">{{ t("yangiliklar") }}</span></h2>
         </div>
+        <Swiper
+          :modules="[Navigation]"
+          :slides-per-view="3"
+          :space-between="30"
+          :loop="true"
+          navigation
+          pagination
+          class="my-swiper"
+        >
+          <SwiperSlide v-for="(item, index) in news" :key="index" class="news-wrapper">
+            <div class="news-card">
+              <img :src="item.image" alt="" />
+              <div class="news-time">
+                <div>
+                  <img src="../../../public/images/newcalendar.svg" alt="" />
+                  <p>{{ item.date }}</p>
+                </div>
+                <div>
+                  <img src="../../../public/images/eye.svg" alt="" />
+                  <p>{{ item.views }}</p>
+                </div>
+              </div>
+              <h3>{{ t(item.title) }}</h3>
+              <p>{{ t(item.text) }}</p>
+              <div class="hover-item">
+                <img src="../../../public/images/hoverst.svg" alt="" />
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <div class="list-news">
+            <button style="cursor: pointer;">{{ t("news.BarchaYangiliklar") }}</button>
+        </div>
+      </div>
     </section>
-</template>
+  </template>
+  
+
+
+
+
+  <script setup>
+  import { Swiper, SwiperSlide } from 'swiper/vue'
+  import { Navigation, Pagination } from 'swiper/modules'
+  import 'swiper/css'
+  import 'swiper/css/navigation'
+  import 'swiper/css/pagination'
+  import { useI18n } from 'vue-i18n'
+  
+  const { t } = useI18n()
+  
+  const news = [
+  {
+    image: '/images/news1.svg',
+    date: '04.04.2025 / 15:34',
+    views: 992,
+    title: 'news.title1',
+    text: 'news.text1'
+  },
+  {
+    image: '/images/new2.svg',
+    date: '04.04.2025 / 15:34',
+    views: 992,
+    title: 'news.title2',
+    text: 'news.text2'
+  },
+  {
+    image: '/images/new3.svg',
+    date: '04.04.2025 / 15:34',
+    views: 992,
+    title: 'news.title3',
+    text: 'news.text3'
+  },
+  {
+    image: '/images/new3.svg',
+    date: '05.04.2025 / 10:15',
+    views: 1200,
+    title: 'news.title4',
+    text: 'news.text4'
+  },
+  {
+    image: '/images/new2.svg',
+    date: '05.04.2025 / 11:00',
+    views: 860,
+    title: 'news.title5',
+    text: 'news.text5'
+  }
+]
+
+  </script>
+  
+
+
 
 
 <style scoped>
@@ -169,49 +233,4 @@ section {
 
 </style>
 
-<script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 
-const news = [
-    {
-        image: '/images/news1.svg',
-        date: '04.04.2025 / 15:34',
-        views: 992,
-        title: 'Saudiya arabistonida muhim kelishuvga erishdi',
-        text: 'Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.'
-    },
-    {
-        image: '/images/new2.svg',
-        date: '04.04.2025 / 15:34',
-        views: 992,
-        title: '"O‘zmilliybank" AJ va Xitoy Eksimbanki o‘rtasida 2 mlrd...',
-        text: 'Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.'
-    },
-    {
-        image: '/images/new3.svg',
-        date: '04.04.2025 / 15:34',
-        views: 992,
-        title: '"Asakabank" AJ Xitoyning Zheshang banki bilan hamkor....',
-        text: 'Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.'
-    },
-    {
-        image: '/images/new3.svg',
-        date: '05.04.2025 / 10:15',
-        views: 1200,
-        title: 'Yangi loyiha ishga tushirildi',
-        text: 'O‘zbekiston hukumati yangi texnopark qurilishi haqida e’lon qildi.'
-    },
-    {
-        image: '/images/new2.svg',
-        date: '05.04.2025 / 11:00',
-        views: 860,
-        title: 'Bank sohasida raqamli transformatsiya',
-        text: 'Banklar mijozlar uchun yangi onlayn xizmatlarni ishga tushirmoqda.'
-    }
-]
-
-</script>
