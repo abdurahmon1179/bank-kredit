@@ -1,70 +1,70 @@
 <template>
     <section>
-        <div class="service">
-            <div class="service-title">
-                <p>Interaktiv <span style="color: #00B241;">xizmatlar</span></p>
-            </div>
-            <div class="service-card-wrapper">
-                <div class="service-card">
-                    <div class="service-card-text">
-                        <h3>Kredit mahsulotlari</h3>
-                        <p>Sizning ehtiyojlaringiz uchun mos kredit turlari. Iste’mol, ipoteka va biznes kreditlari.
-                            Qulay shartlar va tezkor rasmiylashtirish.</p>
-                        <button>
-                            <p>Batafsil</p>
-                            <img src="../../../public/images/btnarrow.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="service-img">
-                        <img src="../../../public/images/service.svg" alt="">
-                    </div>
-                </div>
-
-                <div class="service-card card-hover">
-                    <div class="service-card-text">
-                        <h3>Moliyaviy savodxonlik</h3>
-                        <p>Pulni to‘g‘ri boshqarishni o‘rganing.
-                            Budjet tuzish, tejash va investitsiya bo‘yicha maslahatlar. Moliyaviy mustaqillikka birinchi qadam.</p>
-                        <button>
-                            <p>Batafsil</p>
-                            <img src="../../../public/images/btnarrow.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="service-img">
-                        <img src="../../../public/images/service2.svg" alt="">
-                    </div>
-                </div>
-                <div class="service-card card-hover">
-                    <div class="service-card-text">
-                        <h3>Murojaat qoldirish</h3>
-                        <p>Savolingiz, taklifingiz yoki muammoyingiz bormi? Biz har doim eshitishga tayyormiz.
-                            Online murojaat yuboring — tez javob oling.</p>
-                        <button>
-                            <p>Batafsil</p>
-                            <img src="../../../public/images/btnarrow.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="service-img">
-                        <img src="../../../public/images/service3.svg" alt="">
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-text">
-                        <h3>Ariza qoldirish</h3>
-                        <p>Kredit olish uchun ariza topshirish juda oson. Kerakli ma’lumotlarni to‘ldiring va yuboring. Arizangiz tezda ko‘rib chiqiladi.</p>
-                        <button>
-                            <p>Batafsil</p>
-                            <img src="../../../public/images/btnarrow.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="service-img">
-                        <img src="../../../public/images/service4.svg" alt="">
-                    </div>
-                </div>
-            </div>
+      <div class="service">
+        <div class="service-title">
+          <p>{{ $t('service.title') }} <span style="color: #00B241;">{{ $t('service.highlight') }}</span></p>
         </div>
+        <div class="service-card-wrapper">
+          <div class="service-card">
+            <div class="service-card-text">
+              <h3>{{ $t('service.cards.kredit.title') }}</h3>
+              <p>{{ $t('service.cards.kredit.text') }}</p>
+              <button>
+                <p>{{ $t('service.cards.button') }}</p>
+                <img src="../../../public/images/btnarrow.svg" alt="" />
+              </button>
+            </div>
+            <div class="service-img">
+              <img src="../../../public/images/service.svg" alt="" />
+            </div>
+          </div>
+  
+          <div class="service-card card-hover">
+            <div class="service-card-text">
+              <h3>{{ $t('service.cards.savodxonlik.title') }}</h3>
+              <p>{{ $t('service.cards.savodxonlik.text') }}</p>
+              <button>
+                <p>{{ $t('service.cards.button') }}</p>
+                <img src="../../../public/images/btnarrow.svg" alt="" />
+              </button>
+            </div>
+            <div class="service-img">
+              <img src="../../../public/images/service2.svg" alt="" />
+            </div>
+          </div>
+  
+          <div class="service-card card-hover">
+            <div class="service-card-text">
+              <h3>{{ $t('service.cards.murojaat.title') }}</h3>
+              <p>{{ $t('service.cards.murojaat.text') }}</p>
+              <button>
+                <p>{{ $t('service.cards.button') }}</p>
+                <img src="../../../public/images/btnarrow.svg" alt="" />
+              </button>
+            </div>
+            <div class="service-img">
+              <img src="../../../public/images/service3.svg" alt="" />
+            </div>
+          </div>
+  
+          <div class="service-card">
+            <div class="service-card-text">
+              <h3>{{ $t('service.cards.ariza.title') }}</h3>
+              <p>{{ $t('service.cards.ariza.text') }}</p>
+              <button>
+                <p>{{ $t('service.cards.button') }}</p>
+                <img src="../../../public/images/btnarrow.svg" alt="" />
+              </button>
+            </div>
+            <div class="service-img">
+              <img src="../../../public/images/service4.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-</template>
+  </template>
+  
 
 <style scoped>
 section {

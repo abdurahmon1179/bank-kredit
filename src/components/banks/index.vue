@@ -558,10 +558,11 @@
 </template>
 
 <style scoped>
-.banks{
+.banks {
     margin-top: 80px;
 }
-.banks-title{
+
+.banks-title {
     font-size: 40px;
     font-weight: 600;
     display: flex;
@@ -569,7 +570,8 @@
     justify-content: center;
     margin-bottom: 40px;
 }
-.bank-card{
+
+.bank-card {
     width: 439px;
     height: 362px;
     background-color: white;
@@ -577,36 +579,43 @@
     border-radius: 12px;
     border: 1px solid #E9E9E9;
 }
-.bank-card-title{
+
+.bank-card-title {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-.bank-card-title > h3{
+
+.bank-card-title>h3 {
     font-size: 22px;
     font-weight: 600;
 }
-.bank-card > hr{
+
+.bank-card>hr {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-.bank-phone{
+
+.bank-phone {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.phone-number{
+
+.phone-number {
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.bank-data-wrapper{
+
+.bank-data-wrapper {
     display: flex;
     flex-direction: column;
     gap: 6px;
     margin-bottom: 32px;
 }
-.bank-card > button{
+
+.bank-card>button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -618,22 +627,26 @@
     color: black;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 12px; cursor: pointer;  
+    border-radius: 12px;
+    cursor: pointer;
 }
-.bank-cards-wrapper{
+
+.bank-cards-wrapper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: space-between;
 }
-.bank-list{
+
+.bank-list {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
 }
-.bank-list > button{
+
+.bank-list>button {
     width: 181px;
     height: 48px;
     background-color: white;
@@ -649,7 +662,7 @@
     border: 1px solid #00B241;
 }
 
-.bank-card:hover > button {
+.bank-card:hover>button {
     background-color: #00B241;
 }
 
@@ -665,8 +678,6 @@
 .bank-card:hover .hover-img {
     display: inline-block;
 }
-
-
 </style>
 
 <script setup>

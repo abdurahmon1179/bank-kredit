@@ -1,178 +1,132 @@
 <template>
     <section>
-        <Container>
-            <div class="hero-title">
-                <h1>BIZ BILAN TADBIRKORLIKNI <span style="color: #00B241;">RIVOJLANTIRING!</span></h1>
+      <Container>
+        <div class="hero-title">
+          <h1>{{ $t('hero.title') }} <span style="color: #00B241;">{{ $t('hero.highlight') }}</span></h1>
+        </div>
+  
+        <div class="currency-wrapper">
+          <div class="currency-rates">
+            <div class="currency-card">
+              <div class="currency-title">
+                <p>{{ $t('currency.title') }}</p>
+                <img src="/images/arrow.svg" alt="arrow" />
+              </div>
+              <div class="calendar">
+                <img src="/images/calendar.svg" alt="calendar" />
+                <p>{{ date }}</p>
+              </div>
             </div>
-
-
-            <div class="currency-wrapper">
-                <div class="currency-rates">
-                    <div class="currency-card">
-                        <div class="currency-title">
-                            <p>Valyuta kurslari</p>
-                            <img src="../../../public/images/arrow.svg" alt="">
-                        </div>
-                        <div class="calendar">
-                            <img src="../../../public/images/calendar.svg" alt="">
-                            <p>12.06.2025</p>
-                        </div>
-                    </div>
-                    <div class="country-currency-card">
-                        <img class="country-flag" src="../../../public/images/usa.svg" alt="">
-                        <div class="usa-currency">
-                            <p>USD = 12920.16</p>
-                            <span style="color: #D32F2F;">-13</span>
-                        </div>
-                        <img class="graph" src="../../../public/images/minus.svg" alt="">
-                    </div>
-                    <div class="country-currency-card">
-                        <img class="country-flag" src="../../../public/images/euro.svg" alt="">
-                        <div class="usa-currency">
-                            <p>EUR = 14681.18</p>
-                            <span style="color: #D32F2F;">-38.05</span>
-                        </div>
-                        <img class="graph" src="../../../public/images/minus.svg" alt="">
-                    </div>
-                    <div class="country-currency-card">
-                        <img class="country-flag" src="../../../public/images/rossia.svg" alt="">
-                        <div class="usa-currency">
-                            <p>RUB = 158.61</p>
-                            <span style="color: #009423;">+0.33</span>
-                        </div>
-                        <img class="graph" src="../../../public/images/plus.svg" alt="">
-                    </div>
-                    <div class="country-currency-card">
-                        <img class="country-flag" src="../../../public/images/uk.svg" alt="">
-                        <div class="usa-currency">
-                            <p>GBP = 17262.63</p>
-                            <span style="color: #D32F2F;">-61.34</span>
-                        </div>
-                        <img class="graph" src="../../../public/images/minus.svg" alt="">
-                    </div>
-                    <div class="country-currency-card">
-                        <img class="country-flag" src="../../../public/images/japan.svg" alt="">
-                        <div class="usa-currency">
-                            <p>JPY = 90.28</p>
-                            <span style="color: #D32F2F;">-61.34</span>
-                        </div>
-                        <img class="graph" src="../../../public/images/minus.svg" alt="">
-                    </div>
-                    <div class="country-currency-card">
-                        <img class="country-flag" src="../../../public/images/switzerland.svg" alt="">
-                        <div class="usa-currency">
-                            <p>CHF = 1564.52</p>
-                            <span style="color: #D32F2F;">-61.34</span>
-                        </div>
-                        <img class="graph" src="../../../public/images/minus.svg" alt="">
-                    </div>
-                    <div class="country-currency-card">
-                        <img class="country-flag" src="../../../public/images/china.svg" alt="">
-                        <div class="usa-currency">
-                            <p>CNY = 1778.66</p>
-                            <span style="color: #009423;">+0.07</span>
-                        </div>
-                        <img class="graph" src="../../../public/images/plus.svg" alt="">
-                    </div>
-                </div>
-
-
-                <div>
-                    <div class="currency-stats">
-                        <div class="currency-stats-card">
-                            <img src="../../../public/images/cardicon.svg" alt="">
-                            <div class="card-text">
-                                <p>Asosiy stavka</p>
-                                <h3>14%</h3>
-                            </div>
-                        </div>
-
-                        <div class="currency-stats-card">
-                            <img src="../../../public/images/keyboard.svg" alt="">
-                            <div class="card-text">
-                                <p>Yillik inflyatsiya</p>
-                                <h3>10,3%</h3>
-                            </div>
-                        </div>
-
-                        <div class="currency-stats-card">
-                            <img src="../../../public/images/person.svg" alt="">
-                            <div class="card-text">
-                                <p>Inflyatsion target</p>
-                                <h3>55%</h3>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="section-wrapper">
-                        <div class="currency-national">
-                            <h3 class="currency-national-title">majburiy zahira me‘yorlari</h3>
-                            <div class="national-card" style="margin-bottom: 16px;">
-                                <h3>Milliy valyuta</h3>
-                                <p>O‘zbekiston bank tizimi tomonidan saqlanayotgan majburiy zahiralari</p>
-                                <div>
-                                    <p><span>135</span>Trilliyon so‘m</p>
-                                </div>
-                            </div>
-
-                            <div class="national-card">
-                                <h3>Milliy valyuta</h3>
-                                <p>O‘zbekiston bank tizimi tomonidan saqlanayotgan majburiy zahiralari</p>
-                                <div>
-                                    <p><span>789</span>Trilliyon so‘m</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="stats-year">
-                            <div class="stats-year-title">
-                                <h3>O‘rtacha tortilgan foiz stavkalar (mart, 2025 yil)</h3>
-                            </div>
-                            <div class="stat-wrapper">
-                                <div>
-                                    <div class="stats-year-card">
-                                        <h3>Milliy valyutada</h3>
-                                        <div>
-                                            <p>1 yilgacha bo‘lgan jami <br> muddatli depozitlar bo‘yicha</p>
-                                            <span>17,2%</span>
-                                        </div>
-                                        <hr>
-                                        <div>
-                                            <p>1 yilgacha bo‘lgan jami <br> muddatli depozitlar bo‘yicha</p>
-                                            <span>17,2%</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="stats-year-card">
-                                        <h3>Milliy valyutada</h3>
-                                        <div>
-                                            <p>1 yilgacha bo‘lgan jami <br> muddatli depozitlar bo‘yicha</p>
-                                            <span>17,2%</span>
-                                        </div>
-                                        <hr>
-                                        <div>
-                                            <p>1 yilgacha bo‘lgan jami <br> muddatli depozitlar bo‘yicha</p>
-                                            <span>17,2%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="stat-line-graph">
-                                    <h3>O‘rtacha tortilgan foiz stavkalar</h3>
-                                    <div>
-                                        <apexchart width="320px" height="340" type="area" :options="chartOptions"
-                                            :series="series" />
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  
+            <div v-for="currency in currencies" :key="currency.Ccy" class="country-currency-card">
+              <img class="country-flag" :src="`/images/${currency.flag}`" :alt="currency.CcyNm_UZ" />
+              <div class="usa-currency">
+                <p>{{ currency.Ccy }} = {{ currency.Rate }}</p>
+                <span :style="{ color: currency.Change > 0 ? '#009423' : (currency.Change < 0 ? '#D32F2F' : '#000000') }">
+                  {{ currency.Change > 0 ? '+' : '' }}{{ currency.Change }}
+                </span>
+              </div>
+              <img class="graph" :src="`/images/${currency.Change >= 0 ? 'plus' : 'minus'}.svg`"
+                :alt="currency.Change >= 0 ? 'plus' : 'minus'" />
             </div>
-        </Container>
+          </div>
+  
+          <div>
+            <div class="currency-stats">
+              <div class="currency-stats-card">
+                <img src="../../../public/images/cardicon.svg" alt="">
+                <div class="card-text">
+                  <p>{{ $t('stats.mainRate') }}</p>
+                  <h3>14%</h3>
+                </div>
+              </div>
+  
+              <div class="currency-stats-card">
+                <img src="../../../public/images/keyboard.svg" alt="">
+                <div class="card-text">
+                  <p>{{ $t('stats.inflation') }}</p>
+                  <h3>10,3%</h3>
+                </div>
+              </div>
+  
+              <div class="currency-stats-card">
+                <img src="../../../public/images/person.svg" alt="">
+                <div class="card-text">
+                  <p>{{ $t('stats.target') }}</p>
+                  <h3>55%</h3>
+                </div>
+              </div>
+            </div>
+  
+            <div class="section-wrapper">
+              <div class="currency-national">
+                <h3 class="currency-national-title">{{ $t('reserve.title') }}</h3>
+  
+                <div class="national-card" style="margin-bottom: 16px;">
+                  <h3>{{ $t('reserve.nationalCurrency') }}</h3>
+                  <p>{{ $t('reserve.description') }}</p>
+                  <div>
+                    <p><span>135</span>{{ $t('reserve.unit') }}</p>
+                  </div>
+                </div>
+  
+                <div class="national-card">
+                  <h3>{{ $t('reserve.nationalCurrency') }}</h3>
+                  <p>{{ $t('reserve.description') }}</p>
+                  <div>
+                    <p><span>789</span>{{ $t('reserve.unit') }}</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="stats-year">
+                <div class="stats-year-title">
+                  <h3>{{ $t('averageRates.title') }}</h3>
+                </div>
+                <div class="stat-wrapper">
+                  <div>
+                    <div class="stats-year-card">
+                      <h3>{{ $t('averageRates.currency') }}</h3>
+                      <div>
+                        <p>{{ $t('averageRates.text1') }}</p>
+                        <span>17,2%</span>
+                      </div>
+                      <hr>
+                      <div>
+                        <p>{{ $t('averageRates.text2') }}</p>
+                        <span>17,2%</span>
+                      </div>
+                    </div>
+  
+                    <div class="stats-year-card">
+                      <h3>{{ $t('averageRates.currency') }}</h3>
+                      <div>
+                        <p>{{ $t('averageRates.text1') }}</p>
+                        <span>17,2%</span>
+                      </div>
+                      <hr>
+                      <div>
+                        <p>{{ $t('averageRates.text2') }}</p>
+                        <span>17,2%</span>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="stat-line-graph">
+                    <h3>{{ $t('averageRates.graphTitle') }}</h3>
+                    <div>
+                      <apexchart width="320px" height="340" type="area" :options="chartOptions" :series="series" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
     </section>
-</template>
+  </template>
+  
 
 
 
@@ -263,20 +217,24 @@ section {
     border-radius: 8px;
     border: 1px solid #E9E9E9;
 }
-.card-text > h3{
+
+.card-text>h3 {
     font-size: 32px;
     font-weight: 600;
     margin-top: -15px;
 }
+
 .card-text {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
-.card-text > p{
+
+.card-text>p {
     font-size: 18px;
     font-weight: 500;
 }
+
 .section-wrapper {
     margin-top: 24px;
     display: flex;
@@ -314,7 +272,7 @@ section {
 
 .national-card>p {
     color: #A2A3A5;
-    margin-bottom: 33px;
+    margin-bottom: 15px;
 }
 
 .national-card>div {
@@ -324,7 +282,7 @@ section {
 }
 
 .national-card>div>p>span {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 600;
 }
 
@@ -393,20 +351,20 @@ section {
     height: 370px;
 }
 
-.stat-line-graph > h3{
+.stat-line-graph>h3 {
     padding-left: 20px;
     padding-top: 10px;
 }
-.country-flag{
+
+.country-flag {
     width: 32px;
     height: 24px;
 }
 
-.graph{
+.graph {
     width: 33px;
     height: 20px;
 }
-
 </style>
 
 
@@ -415,82 +373,86 @@ section {
 import Container from "../layouts/index.vue"
 import { ref } from 'vue'
 import ApexCharts from 'apexcharts'
+import currenciesData from '../../assets/currency.json'
+
+const date = ref('12.06.2025')
+const currencies = ref(currenciesData)
 
 defineExpose({ ApexCharts })
 
 const series = ref([
-  {
-    name: 'Tovar Narxi',
-    data: [20.0, 21.0, 22.0, 22.5]
-  }
+    {
+        name: 'Tovar Narxi',
+        data: [20.0, 21.0, 22.0, 22.5]
+    }
 ])
 
 const chartOptions = ref({
-  chart: {
-    type: 'area',
-    stacked: false,
-    zoom: {
-      enabled: true,
-      type: 'x',
-      autoScaleYaxis: false
+    chart: {
+        type: 'area',
+        stacked: false,
+        zoom: {
+            enabled: true,
+            type: 'x',
+            autoScaleYaxis: false
+        },
+        toolbar: {
+            show: false
+        }
     },
-    toolbar: {
-      show: false
-    }
-  },
 
-  dataLabels: {
-    enabled: false
-  },
-
-  markers: {
-    size: 4,
-    colors: ['#00b241'],
-    strokeColors: '#fff',
-    strokeWidth: 2
-  },
-
-  fill: {
-    type: 'gradient',
-    gradient: {
-      shadeIntensity: 1,
-      inverseColors: false,
-      opacityFrom: 0.5,
-      opacityTo: 0,
-      stops: [0, 90, 100]
-    }
-  },
-
-  yaxis: {
-    min: 20,
-    max: 22.5,
-    tickAmount: 6,
-    labels: {
-      formatter: val => val.toFixed(1)
-    }
-  },
-
-  xaxis: {
-    type: 'category',
-    categories: ['2022', '2023', '2024', '2025'],
-    labels: {
-      style: {
-        fontSize: '12px'
-      }
-    }
-  },
-
-  tooltip: {
-    shared: false,
-    y: {
-      formatter: val => val.toFixed(2)
+    dataLabels: {
+        enabled: false
     },
-  },
 
-  legend: {
-    show: true,
-    position: 'top',
-    horizontalAlign: 'left'
-  }
+    markers: {
+        size: 4,
+        colors: ['#00b241'],
+        strokeColors: '#fff',
+        strokeWidth: 2
+    },
+
+    fill: {
+        type: 'gradient',
+        gradient: {
+            shadeIntensity: 1,
+            inverseColors: false,
+            opacityFrom: 0.5,
+            opacityTo: 0,
+            stops: [0, 90, 100]
+        }
+    },
+
+    yaxis: {
+        min: 20,
+        max: 22.5,
+        tickAmount: 6,
+        labels: {
+            formatter: val => val.toFixed(1)
+        }
+    },
+
+    xaxis: {
+        type: 'category',
+        categories: ['2022', '2023', '2024', '2025'],
+        labels: {
+            style: {
+                fontSize: '12px'
+            }
+        }
+    },
+
+    tooltip: {
+        shared: false,
+        y: {
+            formatter: val => val.toFixed(2)
+        },
+    },
+
+    legend: {
+        show: true,
+        position: 'top',
+        horizontalAlign: 'left'
+    }
 })
 </script>

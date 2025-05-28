@@ -1,54 +1,75 @@
 <template>
     <header>
-        <Container>
-            <nav>
-                <div class="nav-logo">
-                    <a href="#">
-                        <img src="../../../public/images/logo.svg" alt="">
-                    </a>
-                </div>
-                <div class="nav-menu-wrapper">
-                    <div class="nav-menu">
-                        <div class="nav-menu-card">
-                            <img src="../../../public/images/home.svg" alt="">
-                            <p>KREDIT MAHSULOTLAR</p>
-                        </div>
-                        <div class="nav-menu-card">
-                            <img src="../../../public/images/message.svg" alt="">
-                            <p>ARIZA YUBORISH</p>
-                        </div>
-                        <div class="nav-menu-card">
-                            <img src="../../../public/images/checkmessage.svg" alt="">
-                            <p>ARIZANI TEKSHIRISH</p>
-                        </div>
-                    </div>
-                    <div class="nav-actions">
-                        <div class="nav-select">
-                            <img class="js-img" src="../../../public/images/uz.svg" alt="">
-                            <select class="js-select">
-                                <option value="uz">O'zbekcha</option>
-                                <option value="ru">Ruscha</option>
-                            </select>
-                        </div>
-                        <button>
-                            <p>KIRISH</p>
-                            <img src="../../../public/images/account.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </Container>
-        <hr>
-        <ul class="header-menu">
-            <li>Bosh sahifa</li>
-            <li>Banklar</li>
-            <li>Murojaat</li>
-            <li>Ariza qoldirish</li>
-            <li>Moliyaviy savodhonlik</li>
-            <li>Yangiliklar</li>
-        </ul>
+      <Container>
+        <nav>
+          <div class="nav-logo">
+            <a href="#">
+              <img src="../../../public/images/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="nav-menu-wrapper">
+            <div class="nav-menu">
+              <div class="nav-menu-card">
+                <img src="../../../public/images/home.svg" alt="">
+                <p>{{ $t('nav.kreditMahsulotlar') }}</p>
+              </div>
+              <div class="nav-menu-card">
+                <img src="../../../public/images/message.svg" alt="">
+                <p>{{ $t('nav.arizaYuborish') }}</p>
+              </div>
+              <div class="nav-menu-card">
+                <img src="../../../public/images/checkmessage.svg" alt="">
+                <p>{{ $t('nav.arizaniTekshirish') }}</p>
+              </div>
+            </div>
+            <div class="nav-actions">
+              <div class="nav-select">
+                <img class="js-img" :src="flagSrc" alt="flag" />
+                <select v-model="locale">
+                  <option value="uz">{{ $t('lang.uzbek') }}</option>
+                  <option value="ru">{{ $t('lang.russian') }}</option>
+                </select>
+              </div>
+              <button>
+                <p>{{ $t('nav.kirish') }}</p>
+                <img src="../../../public/images/account.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </nav>
+      </Container>
+      <hr>
+      <ul class="header-menu">
+        <li>{{ $t('header.boshSahifa') }}</li>
+        <li>{{ $t('header.banklar') }}</li>
+        <li>{{ $t('header.murojaat') }}</li>
+        <li>{{ $t('header.arizaQoldirish') }}</li>
+        <li>{{ $t('header.moliyaviySavodhonlik') }}</li>
+        <li>{{ $t('header.yangiliklar') }}</li>
+      </ul>
     </header>
-</template>
+  </template>
+  
+  <script setup>
+  import { ref, watch } from 'vue'
+  import Container from "../layouts/index.vue"
+  import { useI18n } from 'vue-i18n'
+  
+  const { locale } = useI18n()
+  
+  const flagSrc = ref("../../../public/images/uz.svg")
+  
+  watch(locale, (newLocale) => {
+    if (newLocale === "uz") {
+      flagSrc.value = "../../../public/images/uz.svg"
+    } else if (newLocale === "ru") {
+      flagSrc.value = "../../../public/images/ru.png"
+    }
+  })
+  </script>
+  
+  
+
 
 <style scoped>
 header{
@@ -169,22 +190,3 @@ hr{
     background-color: #F0F0F0;
 }
 </style>
-
-<script setup>
-import { onMounted } from 'vue'
-import Container from "../layouts/index.vue"
-
-onMounted(() => {
-    var elSelect = document.querySelector(".js-select")
-    var elImg = document.querySelector(".js-img")
-
-    elSelect.addEventListener("change", () => {
-        if (elSelect.value === "uz") {
-            elImg.src = "../../../public/images/uz.svg"
-        } else {
-            elImg.src = "../../../public/images/ru.png"
-        }
-    })
-})
-
-</script>

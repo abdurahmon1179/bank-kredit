@@ -1,0 +1,59 @@
+[
+    {
+      "Ccy": "USD",
+      "CcyNm_UZ": "AQSH dollari",
+      "Rate": "12886.90",
+      "Date": "28.05.2025",
+      "flag": "usa.svg",
+      "Change": -13
+    },
+    {
+      "Ccy": "EUR",
+      "CcyNm_UZ": "EVRO",
+      "Rate": "14625.34",
+      "Date": "28.05.2025",
+      "flag": "euro.svg",
+      "Change": -38.05
+    },
+    {
+      "Ccy": "RUB",
+      "CcyNm_UZ": "Rossiya rubli",
+      "Rate": "160.87",
+      "Date": "28.05.2025",
+      "flag": "rossia.svg",
+      "Change": 33
+    },
+    {
+      "Ccy": "GBP",
+      "CcyNm_UZ": "Angliya funt sterlingi",
+      "Rate": "17456.59",
+      "Date": "28.05.2025",
+      "flag": "uk.svg",
+      "Change": -61.34
+    },
+    {
+      "Ccy": "JPY",
+      "CcyNm_UZ": "Yaponiya iyenasi",
+      "Rate": "89.54",
+      "Date": "28.05.2025",
+      "flag": "japan.svg",
+      "Change": -61.34
+    },
+    {
+      "Ccy": "CHF",
+      "CcyNm_UZ": "Shveytsariya franki",
+      "Rate": "15599.69",
+      "Date": "28.05.2025",
+      "flag": "switzerland.svg",
+      "Change": -61.34
+    },
+    {
+      "Ccy": "CNY",
+      "CcyNm_UZ": "Xitoy yuani",
+      "Rate": "1791.07",
+      "Date": "28.05.2025",
+      "flag": "china.svg",
+      "Change": 0.07
+    }
+  ]
+  
