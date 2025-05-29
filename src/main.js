@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import VueApexCharts from 'vue3-apexcharts'
-import i18n from "./i18n/i18n"
+import i18n from "./i18n/index.js"
 
 
 const app = createApp(App)
