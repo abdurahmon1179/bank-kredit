@@ -1,8 +1,8 @@
 // src/i18n/index.js
 
 import { createI18n } from 'vue-i18n'
-import uz from './uz.json'
-import ru from './ru.json'
+import uz from './uz'
+import ru from './ru'
 
 const messages = {
   uz,
