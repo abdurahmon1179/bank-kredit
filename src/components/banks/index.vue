@@ -2,13 +2,14 @@
     <Container>
         <div class="banks">
             <div class="banks-title">
-                <p>O‘zbekistondagi <span style="color: #00B241;">tijorat banklari</span></p>
+                <p v-html="$t('banks.title')"></p>
             </div>
+
             <div class="bank-cards-wrapper">
                 <div class="bank-card">
                     <div class="bank-card-title">
                         <img src="../../../public/images/agrobank.svg" alt="">
-                        <h3>Agrobank</h3>
+                        <h3>{{ $t("banks.agrobank.name") }}</h3>
                     </div>
                     <hr>
                     <div class="bank-data-wrapper">
@@ -16,19 +17,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -39,10 +39,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -50,18 +50,19 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
+
 
 
 
@@ -77,19 +78,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -100,10 +100,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -111,15 +111,15 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
@@ -138,19 +138,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -161,10 +160,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -172,15 +171,15 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
@@ -197,19 +196,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -220,10 +218,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -231,15 +229,15 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
@@ -258,19 +256,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -281,10 +278,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -292,15 +289,15 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
@@ -318,19 +315,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -341,10 +337,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -352,16 +348,15 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
-
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
@@ -379,19 +374,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -402,10 +396,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -413,16 +407,15 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
-
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
@@ -440,19 +433,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -463,10 +455,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -474,16 +466,15 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
-
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
@@ -502,19 +493,18 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/tel.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/call.svg" alt="">
-                                <p>Telefon raqam:</p>
+                                <p>{{ $t("banks.agrobank.phoneLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
                             </div>
                         </div>
 
-
                         <div class="bank-phone">
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/callcenter.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/asist.svg" alt="">
-                                <p>Aloqa markazi:</p>
+                                <p>{{ $t("banks.agrobank.callCenterLabel") }}</p>
                             </div>
                             <div>
                                 <p>+998 12 345 67 89</p>
@@ -525,10 +515,10 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/location.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/lakatsiya.svg" alt="">
-                                <p>Manzili:</p>
+                                <p>{{ $t("banks.agrobank.addressLabel") }}</p>
                             </div>
                             <div>
-                                <p>Kichik halqa yo‘li 67</p>
+                                <p>{{ $t("banks.agrobank.address") }}</p>
                             </div>
                         </div>
 
@@ -536,23 +526,23 @@
                             <div class="phone-number">
                                 <img class="default-img" src="../../../public/images/onlineloc.svg" alt="">
                                 <img class="hover-img" src="../../../public/images/loconline.svg" alt="">
-                                <p>E-manzil:</p>
+                                <p>{{ $t("banks.agrobank.emailLabel") }}</p>
                             </div>
                             <div>
-                                <p>Elektronmanzil@gmail.com</p>
+                                <p>{{ $t("banks.agrobank.email") }}</p>
                             </div>
                         </div>
                     </div>
-
                     <button>
-                        <p>Bank Sahifasi</p>
+                        <p>{{ $t("banks.agrobank.button") }}</p>
                         <img src="../../../public/images/btnarrow.svg" alt="">
                     </button>
                 </div>
             </div>
             <div class="bank-list">
-                <button>Barcha Banklar</button>
-            </div>
+                <button>{{ $t('banks.allBanksButton') }}</button>
+</div>
+
         </div>
     </Container>
 </template>
@@ -623,7 +613,7 @@
     width: 100%;
     height: 48px;
     background-color: #F9F9F9;
-    border: none;
+    border: 1px solid #F0F0F0;
     color: black;
     font-size: 16px;
     font-weight: 600;
@@ -677,6 +667,18 @@
 
 .bank-card:hover .hover-img {
     display: inline-block;
+}
+
+.bank-card:hover button {
+  background-color: #00B241; /* zangori */
+}
+
+.bank-card:hover button p {
+  color: white;
+}
+
+.bank-card:hover button img {
+  filter: brightness(0) invert(1); /* qora rasmni oq qiladi */
 }
 </style>
 

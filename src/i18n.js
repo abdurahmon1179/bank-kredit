@@ -68,20 +68,20 @@ const messages = {
         button: "Batafsil"
       }
     },
-    banks: {
-      title: "O‘zbekistondagi",
-      highlight: "tijorat banklari",
-      agrobank: {
-        name: "Agrobank",
-        phoneLabel: "Telefon raqam:",
-        callCenterLabel: "Aloqa markazi:",
-        addressLabel: "Manzili:",
-        address: "Kichik halqa yo‘li 67",
-        emailLabel: "E-manzil:",
-        email: "Elektronmanzil@gmail.com",
-        button: "Bank Sahifasi"
-      }
-    },
+    "banks": {
+    "title": "O‘zbekistondagi <span style='color: #00B241;'>tijorat banklari</span>",
+    "allBanksButton": "Barcha Banklar",
+    "agrobank": {
+      "name": "Agrobank",
+      "phoneLabel": "Telefon raqam:",
+      "callCenterLabel": "Aloqa markazi:",
+      "addressLabel": "Manzili:",
+      "address": "Kichik halqa yo‘li 67",
+      "emailLabel": "E-manzil:",
+      "email": "Elektronmanzil@gmail.com",
+      "button": "Bank Sahifasi"
+    }
+  },
     news: {
       Songgi: "So‘nggi",
       yangiliklar: "yangiliklar",
@@ -106,8 +106,9 @@ const messages = {
       addressLabel: "Manzil",
       address: "Kichik Halqa Yo‘li 38/1, 100084, Toshkent, Toshkent, O‘zbekiston",
       copyright: "Caroselling mualliflik huquqi 2025"
-    }    
+    }
   },
+  
 
   ru: {
     nav: {
@@ -125,12 +126,12 @@ const messages = {
       banklar: "Банки",
       murojaat: "Обращение",
       arizaQoldirish: "Оставить заявку",
-      moliyaviySavodhonlik: "Финансовая грамотност",
+      moliyaviySavodhonlik: "Финансовая грамотность",
       yangiliklar: "Новости",
     },
     hero: {
-      title: "СТАНЬТЕ УСПЕШНЫМ",
-      highlight: "С НАМИ!"
+      title: "РАЗВИВАЙТЕ БИЗНЕС",
+      highlight: "ВМЕСТЕ С НАМИ!"
     },
     currency: {
       title: "Курсы валют"
@@ -138,19 +139,19 @@ const messages = {
     stats: {
       mainRate: "Основная ставка",
       inflation: "Годовая инфляция",
-      target: "Целевой уровень"
+      target: "Инфляционный таргет"
     },
     reserve: {
-      title: "Обязательные резервы",
+      title: "Нормы обязательных резервов",
       nationalCurrency: "Национальная валюта",
-      description: "Обязательные резервы, хранимые банковской системой Узбекистана",
+      description: "Обязательные резервы, хранящиеся в банковской системе Узбекистана",
       unit: "Триллион сум"
     },
     averageRates: {
-      title: "Средневзвешенные процентные ставки (март 2025)",
+      title: "Средневзвешенные процентные ставки (март 2025 г.)",
       currency: "В национальной валюте",
-      text1: "По всем срочным депозитам до 1 года",
-      text2: "По всем срочным депозитам до 1 года",
+      text1: "По всем срочным \n депозитам до 1 года",
+      text2: "По всем срочным \n депозитам до 1 года",
       graphTitle: "Средневзвешенные ставки"
     },
     service: {
@@ -159,66 +160,62 @@ const messages = {
       cards: {
         kredit: {
           title: "Кредитные продукты",
-          text: "Подходящие кредиты для ваших нужд: потребительские, ипотечные и бизнес-кредиты. Выгодные условия и быстрая регистрация.",
+          text: "Подходящие типы кредитов для ваших нужд. Потребительские, ипотечные и бизнес-кредиты. Выгодные условия и быстрая обработка."
         },
         savodxonlik: {
           title: "Финансовая грамотность",
-          text: "Научитесь управлять деньгами. Бюджет, сбережения и советы по инвестициям. Первый шаг к финансовой независимости.",
+          text: "Научитесь правильно управлять деньгами. Составление бюджета, сбережения и инвестиционные советы. Первый шаг к финансовой независимости."
         },
         murojaat: {
           title: "Оставить обращение",
-          text: "Есть вопрос, предложение или проблема? Мы всегда готовы выслушать. Отправьте онлайн-обращение — получите быстрый ответ.",
+          text: "Есть вопрос, предложение или проблема? Мы всегда готовы вас выслушать. Отправьте онлайн-обращение — получите быстрый ответ."
         },
         ariza: {
           title: "Оставить заявку",
-          text: "Подать заявку на кредит очень просто. Заполните необходимые данные и отправьте. Заявка будет быстро рассмотрена.",
+          text: "Подать заявку на кредит очень просто. Заполните необходимые данные и отправьте. Ваша заявка будет быстро рассмотрена."
         },
         button: "Подробнее"
       }
     },
-    banks: {
-      title: "В Узбекистане",
-      highlight: "коммерческие банки",
-      agrobank: {
-        name: "Агробанк",
-        phoneLabel: "Телефон:",
-        callCenterLabel: "Контактный центр:",
-        addressLabel: "Адрес:",
-        address: "Кичик халка йули 67",
-        emailLabel: "E-mail:",
-        email: "Elektronmanzil@gmail.com",
-        button: "Страница банка"
-      }
-    },
+   "banks": {
+    "title": "Коммерческие <span style='color: #00B241;'>банки Узбекистана</span>",
+    "allBanksButton": "Все банки",
+    "agrobank": {
+      "phoneLabel": "Телефон:",
+      "callCenterLabel": "Контактный центр:",
+      "addressLabel": "Адрес:",
+      "address": "Кичик халка йули 67",
+      "emailLabel": "E-mail:",
+      "email": "Elektronmanzil@gmail.com",
+      "button": "Страница банка"
+    }
+  },
     news: {
       Songgi: "Последние",
       yangiliklar: "новости",
       BarchaYangiliklar: "Все новости",
       title1: "Саудовская Аравия достигла важного соглашения",
       text1: "11–13 мая в Джидде прошло 48-е собрание Группы Исламского банка развития.",
-
-      title2: "Между АО «Узнацбанк» и Эксимбанком Китая подписано соглашение на 2 млрд...",
+      title2: "АО «Узнацбанк» и Эксимбанк Китая подписали соглашение на 2 млрд...",
       text2: "11–13 мая в Джидде прошло 48-е собрание Группы Исламского банка развития.",
-
-      title3: "АО «Асакабанк» начинает сотрудничество с банком Чжэшан из Китая...",
+      title3: "АО «Асакабанк» начал сотрудничество с банком Чжэшан из Китая...",
       text3: "11–13 мая в Джидде прошло 48-е собрание Группы Исламского банка развития.",
       title4: "Запущен новый проект",
       text4: "Правительство Узбекистана объявило о строительстве нового технопарка.",
       title5: "Цифровая трансформация в банковской сфере",
       text5: "Банки запускают новые онлайн-сервисы для клиентов.",
-      BarchaYangiliklar: "Все новости"
     },
     footer: {
       kontaktlar: "Контакты",
-      description: "Bank-kredit.uz - платформа, включающая кредитные продукты и услуги, предлагаемые коммерческими банками для субъектов предпринимательства.",
+      description: "Bank-kredit.uz — платформа, включающая кредитные продукты и услуги, предлагаемые коммерческими банками для субъектов предпринимательства.",
       emailLabel: "Электронная почта",
       phoneLabel: "Телефон",
       addressLabel: "Адрес",
       address: "Кичик Халка Йули 38/1, 100084, Ташкент, Узбекистан",
       copyright: "Авторские права Caroselling 2025"
     }
-    
   }
+  
 };
 
 const i18n = createI18n({
