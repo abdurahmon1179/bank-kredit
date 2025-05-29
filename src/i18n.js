@@ -220,7 +220,7 @@ const messages = {
 
 const i18n = createI18n({
   locale: 'uz',
-  fallbackLocale: 'uz',
+  fallbackLocale: 'ru',
   messages,
 })
 
