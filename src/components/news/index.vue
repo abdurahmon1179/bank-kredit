@@ -1,5 +1,6 @@
 <template>
-    <section>
+<Container>
+  <section>
       <div class="news-section">
         <div class="section-title">
           <h2>{{ t("So‘nggi") }} <span style="color: #00B241;">{{ t("yangiliklar") }}</span></h2>
@@ -39,6 +40,7 @@
         </div>
       </div>
     </section>
+</Container>
   </template>
   
 
@@ -52,6 +54,7 @@
   import 'swiper/css/navigation'
   import 'swiper/css/pagination'
   import { useI18n } from 'vue-i18n'
+  import Container from "../layouts/index.vue"
   
   const { t } = useI18n()
   
@@ -109,7 +112,7 @@ section {
 
 .news-section {
     background-color: white;
-    width: 1450px;
+    width: 1365px;
     height: 720px;
     padding: 80px 48px;
     border-radius: 16px;

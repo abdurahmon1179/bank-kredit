@@ -1,4 +1,5 @@
 <template>
+  <Container>
     <section>
       <div class="service">
         <div class="service-title">
@@ -63,6 +64,8 @@
         </div>
       </div>
     </section>
+  </Container>
+
   </template>
   
 
@@ -90,7 +93,7 @@ section {
 }
 
 .service-card {
-    width: 664px;
+    width: 620px;
     height: 284px;
     background-color: white;
     border-radius: 16px;
@@ -136,6 +139,9 @@ section {
 
 .service-img {
     padding: 12px;
+    width: 252px;
+    height: 252px;
+    display: flex;
 }
 
 .service-card-wrapper{
@@ -211,5 +217,5 @@ section {
 </style>
 
 <script setup>
-
+import Container from "../layouts/index.vue"
 </script>

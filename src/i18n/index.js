@@ -1,4 +1,4 @@
-// src/i18n/index.js
+
 
 import { createI18n } from 'vue-i18n'
 import uz from './uz'
