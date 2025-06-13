@@ -919,7 +919,10 @@
     min-width: 250px !important;
   }
 }
-@media (max-width:410px){
+@media (max-width:505px){
+
+}
+@media (max-width:450px){
   .hero-section__wrapper{
     margin-left: 50px !important;
   }
