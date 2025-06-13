@@ -1,192 +1,293 @@
 <template>
-    <header>
-      <Container>
-        <nav>
-          <div class="nav-logo">
-            <a href="#">
-              <img src="../../../public/images/logo.svg" alt="">
-            </a>
-          </div>
-          <div class="nav-menu-wrapper">
-            <div class="nav-menu">
-              <div class="nav-menu-card">
-                <img src="../../../public/images/home.svg" alt="">
-                <p>{{ $t('nav.kreditMahsulotlar') }}</p>
-              </div>
-              <div class="nav-menu-card">
-                <img src="../../../public/images/message.svg" alt="">
-                <p>{{ $t('nav.arizaYuborish') }}</p>
-              </div>
-              <div class="nav-menu-card">
-                <img src="../../../public/images/checkmessage.svg" alt="">
-                <p>{{ $t('nav.arizaniTekshirish') }}</p>
-              </div>
+  <header class="site-header">
+    <Container>
+      <div class="site-header__inner">
+        <div class="logo">
+          <a href="#">
+            <img src="../../../public/images/logo.svg" alt="">
+          </a>
+        </div>
+
+        <div class="site-header__nav">
+          <div class="nav-menu">
+            <div class="nav-menu__item nav-card">
+              <img class="nav-card__img" src="../../../public/images/navhome.svg" alt="">
+              <p class="nav-card__p">Kredit maxsulotlar</p>
             </div>
-            <div class="nav-actions">
-              <div class="nav-select">
-                <img class="js-img" :src="flagSrc" alt="flag" />
-                <select v-model="locale">
-                  <option value="uz">{{ $t('lang.uzbek') }}</option>
-                  <option value="ru">{{ $t('lang.russian') }}</option>
-                </select>
-              </div>
-              <button>
-                <p>{{ $t('nav.kirish') }}</p>
-                <img src="../../../public/images/account.svg" alt="">
+            <div class="nav-menu__item nav-card">
+              <img class="nav-card__img" src="../../../public/images/navsms.svg" alt="">
+              <p class="nav-card__p">Ariza yuborish</p>
+            </div>
+            <div class="nav-menu__item nav-card">
+              <img class="nav-card__img" src="../../../public/images/navsearch.svg" alt="">
+              <p class="nav-card__p">Kredit maxsulotlar</p>
+            </div>
+          </div>
+
+          <div class="nav-controls">
+            <div class="nav-lang__selector">
+              <img src="../../../public/images/selectuz.svg" alt="">
+              <select class="nav-lang__select">
+                <option value="">Uz</option>
+                <option value="">Ru</option>
+              </select>
+            </div>
+
+            <div class="nav-auth">
+              <button class="nav-auth__btn">
+                <p>Kirish</p>
+                <img src="../../../public/images/authperson.svg" alt="">
               </button>
             </div>
           </div>
-        </nav>
-      </Container>
-      <hr>
-      <ul class="header-menu">
-        <li>{{ $t('header.boshSahifa') }}</li>
-        <li>{{ $t('header.banklar') }}</li>
-        <li>{{ $t('header.murojaat') }}</li>
-        <li>{{ $t('header.arizaQoldirish') }}</li>
-        <li>{{ $t('header.moliyaviySavodhonlik') }}</li>
-        <li>{{ $t('header.yangiliklar') }}</li>
-      </ul>
-    </header>
+          <div class="burger-menu">
+            <img src="../../../public/images/burger.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </Container>
+    <span class="header-hr"></span>
+
+
+    <div class="container">
+      <div class="header-menu">
+        <ul class="header-menu__list">
+          <li class="list-item active">Bosh sahifa</li>
+          <li class="list-item">Banklar</li>
+          <li class="list-item">Murojaat</li>
+          <li class="list-item">Ariza qoldirish</li>
+          <li class="list-item">Moliyaviy savodhonlik</li>
+          <li class="list-item">Yangiliklar</li>
+        </ul>
+      </div>
+    </div>
+
+    <span class="header-hr second-class"></span>
+  </header>
   </template>
   
-  <script setup>
-  import { ref, watch } from 'vue'
-  import Container from "../layouts/index.vue"
-  import { useI18n } from 'vue-i18n'
-  
-  const { locale } = useI18n()
-  
-  const flagSrc = ref("../../../public/images/uz.svg")
-  
-  watch(locale, (newLocale) => {
-    if (newLocale === "uz") {
-      flagSrc.value = "../../../public/images/uz.svg"
-    } else if (newLocale === "ru") {
-      flagSrc.value = "../../../public/images/ru.png"
-    }
-  })
-  </script>
-  
+
   
 
-
-<style scoped>
-header{
+<style lang="scss" scoped>
+.site-header {
     background-color: white;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        height: 64px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .nav-menu {
+            display: flex;
+            gap: 12px;
+
+            &__item {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                background-color: #F9F9F9;
+                padding: 8px 12px;
+                border: 1px solid #F0F0F0;
+                border-radius: 10px;
+                cursor: pointer;
+
+                .nav-card__p {
+                    font-size: 13px;
+                    font-weight: 600;
+                    font-family: inter;
+                    text-transform: uppercase;
+                }
+                img{
+                  width: 18px;
+                  height: 18px;
+                }
+            }
+        }
+
+        .nav-controls {
+            display: flex;
+            gap: 48px;
+
+            .nav-lang__selector {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .nav-lang__select {
+                    border: none;
+                    outline: none;
+                    font-family: inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            .nav-auth {
+                &__btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 12px;
+                    background-color: #00B241;
+                    border: none;
+                    border-radius: 12px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 13px;
+                    font-weight: 600;
+                    font-family: inter;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .header-hr {
+        border: none;
+        background-color: #F0F0F0;
+        height: 1px;
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .header-menu {
+        width: 1130px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+      justify-content: center;
+        .header-menu__list {
+            padding-left: 200px;
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            list-style: none;
+            color: #626262;
+            font-family: inter;
+            font-size: 16px;
+            font-weight: 500;
+
+            .list-item {
+                position: relative;
+                cursor: pointer;
+                transition: color 0.3s ease;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0px;
+                    height: 1.5px;
+                    width: 0;
+                    background-color: black;
+                    transition: width 0.3s ease;
+                }
+
+                &:hover {
+                    color: #000;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
 }
-nav {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-    height: 64px;
+.burger-menu{
+  display: none;
 }
 
-.nav-menu-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+@media (max-width:1420px) {
+    .container {
+        width: 100%;
+        max-width: 1070px;
+        padding: 0 15px;
+    }
+    .nav-menu__item > p{
+      font-size: 13px;
+    }
+    .logo{
+      width: 102px;
+      height: 22px;
+    }
+    .nav-controls{
+      display: none !important;
+    }
+    .burger-menu{
+      display: flex;
+      cursor: pointer;
+    }
+    .header-menu{
+      display: none !important;
+    }
+    .second-class{
+      display: none !important;
+    }
+    .site-header__inner{
+      gap: 0;
+      justify-content: space-between !important;
+    }
+    .site-header__nav{
+      width: 80%;
+    }
+    
 }
 
-.nav-menu {
-    display: flex;
-    gap: 12px;
+@media(max-width:850px){
+  .nav-menu__item{  
+    p{
+      font-size: 11px !important;
+    }
+  }
 }
 
-.nav-menu-card {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #F9F9F9;
-    padding: 12px 8px;
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid #F0F0F0;
+@media(max-width:745px){
+  .nav-menu__item{
+    padding: 10px 6px;
+    p{
+      font-size: 10px !important;
+    }
+  }
 }
 
-.nav-actions {
-    display: flex;
-    gap: 48px;
+
+
+@media(max-width:705px){
+  .nav-menu__item{
+    padding: 6px 8px !important;
+    p{
+      font-size: 9px !important;
+    }
+  }
+  .site-header__nav{
+      width: 78%;
+    }
 }
 
-.nav-select {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+
+@media(max-width:655px){
+  .nav-menu__item{
+    display: none !important;
+  }
 }
 
-.nav-select>select {
-    border: none;
-    outline: none;
-}
 
-.nav-actions>button {
-    width: 93px;
-    height: 36px;
-    background-color: #00B241;
-    border: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    border-radius: 12px;
-    cursor: pointer;
-}
-
-.nav-select>img {
-    width: 20px;
-    height: 13px;
-}
-
-.header-menu {
-    display: flex;
-    list-style: none;
-    gap: 48px;
-    font-size: 16px;
-    font-weight: 500;
-    justify-content: center;
-    align-items: center;
-    height: 56px;
-    width: 1370px;
-}
-
-.header-menu > li {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    color:#626262;
-}
-
-.header-menu > li::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: black;
-    transition: width 0.3s ease;
-}
-.header-menu > li:hover {
-    color: black;
-}
-
-.header-menu > li:hover::after {
-    width: 100%;
-}
-
-.active{
-    text-decoration: underline;
-}
-
-hr{
-    border: none;
-    height: 1px;
-    background-color: #F0F0F0;
-}
 </style>
+
+
+
+<script setup>
+import Container from "../layouts/index.vue"
+</script>

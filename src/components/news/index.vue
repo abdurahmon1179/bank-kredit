@@ -1,239 +1,295 @@
 <template>
-<Container>
-  <section>
-      <div class="news-section">
-        <div class="section-title">
-          <h2>{{ t("So‘nggi") }} <span style="color: #00B241;">{{ t("yangiliklar") }}</span></h2>
-        </div>
-        <Swiper
-          :modules="[Navigation]"
-          :slides-per-view="3"
-          :space-between="30"
-          :loop="true"
-          navigation
-          pagination
-          class="my-swiper"
-        >
-          <SwiperSlide v-for="(item, index) in news" :key="index" class="news-wrapper">
-            <div class="news-card">
-              <img :src="item.image" alt="" />
-              <div class="news-time">
-                <div>
-                  <img src="../../../public/images/newcalendar.svg" alt="" />
-                  <p>{{ item.date }}</p>
-                </div>
-                <div>
-                  <img src="../../../public/images/eye.svg" alt="" />
-                  <p>{{ item.views }}</p>
-                </div>
+ <div class="section-wrapper-res">
+  <section class="section-news">
+    <div class="news-section">
+      <div class="section-title">
+        <h2>So‘nggi <span style="color: #00B241;">yangiliklar</span></h2>
+      </div>
+  
+      <div class="news-list">
+        <div class="news-wrapper">
+          <div class="news-card">
+            <img class="new-banner" src="../../../public/images/new.svg" alt="News Image" />
+            <div class="news-time">
+              <div>
+                <img src="../../../public/images/newcalendar.svg" alt="calendar" />
+                <p>2024-05-30</p>
               </div>
-              <h3>{{ t(item.title) }}</h3>
-              <p>{{ t(item.text) }}</p>
-              <div class="hover-item">
-                <img src="../../../public/images/hoverst.svg" alt="" />
+              <div>
+                <img src="../../../public/images/eye.svg" alt="eye" />
+                <p>153</p>
               </div>
             </div>
-          </SwiperSlide>
-        </Swiper>
-        <div class="list-news">
-            <button style="cursor: pointer;">{{ t("news.BarchaYangiliklar") }}</button>
+            <h3>Yangilik sarlavhasi 1</h3>
+            <p>Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy.</p>
+           
+          </div>
+        </div>
+
+        <div class="news-wrapper">
+          <div class="news-card">
+            <img class="new-banner"  src="../../../public/images/new.svg" alt="News Image" />
+            <div class="news-time">
+              <div>
+                <img src="../../../public/images/newcalendar.svg" alt="calendar" />
+                <p>2024-05-30</p>
+              </div>
+              <div>
+                <img src="../../../public/images/eye.svg" alt="eye" />
+                <p>153</p>
+              </div>
+            </div>
+            <h3>Yangilik sarlavhasi 1</h3>
+            <p>Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy.</p>
+           
+          </div>
+        </div>
+  
+        <div class="news-wrapper">
+          <div class="news-card">
+            <img class="new-banner" src="../../../public/images/new.svg" alt="News Image" />
+            <div class="news-time">
+              <div>
+                <img src="../../../public/images/newcalendar.svg" alt="calendar" />
+                <p>2024-05-30</p>
+              </div>
+              <div>
+                <img src="../../../public/images/eye.svg" alt="eye" />
+                <p>153</p>
+              </div>
+            </div>
+            <h3>Yangilik sarlavhasi 1</h3>
+            <p>Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy.</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="news-wrapper">
+          <div class="news-card">
+            <img class="new-banner" src="../../../public/images/new.svg" alt="News Image" />
+            <div class="news-time">
+              <div>
+                <img src="../../../public/images/newcalendar.svg" alt="calendar" />
+                <p>2024-05-30</p>
+              </div>
+              <div>
+                <img src="../../../public/images/eye.svg" alt="eye" />
+                <p>153</p>
+              </div>
+            </div>
+            <h3>Yangilik sarlavhasi 1</h3>
+            <p>Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy.</p>
+          </div>
         </div>
       </div>
-    </section>
-</Container>
+  
+        <div class="carusel-right">
+          <img src="../../../public/images/caruselright.svg" alt="">
+        </div>
+        <div class="carusel-left">
+          <img src="../../../public/images/caruselleft.svg" alt="">
+        </div>
+      <div class="list-news news-btn">
+        <button style="cursor: pointer; text-transform: uppercase; font-weight: 600; font-size: 16px;">Barcha yangiliklar</button>
+      </div>
+    </div>
+  </section>
+ </div>
   </template>
   
 
 
 
 
-  <script setup>
-  import { Swiper, SwiperSlide } from 'swiper/vue'
-  import { Navigation, Pagination } from 'swiper/modules'
-  import 'swiper/css'
-  import 'swiper/css/navigation'
-  import 'swiper/css/pagination'
-  import { useI18n } from 'vue-i18n'
-  import Container from "../layouts/index.vue"
-  
-  const { t } = useI18n()
-  
-  const news = [
-  {
-    image: '/images/news1.svg',
-    date: '04.04.2025 / 15:34',
-    views: 992,
-    title: 'news.title1',
-    text: 'news.text1'
-  },
-  {
-    image: '/images/new2.svg',
-    date: '04.04.2025 / 15:34',
-    views: 992,
-    title: 'news.title2',
-    text: 'news.text2'
-  },
-  {
-    image: '/images/new3.svg',
-    date: '04.04.2025 / 15:34',
-    views: 992,
-    title: 'news.title3',
-    text: 'news.text3'
-  },
-  {
-    image: '/images/new3.svg',
-    date: '05.04.2025 / 10:15',
-    views: 1200,
-    title: 'news.title4',
-    text: 'news.text4'
-  },
-  {
-    image: '/images/new2.svg',
-    date: '05.04.2025 / 11:00',
-    views: 860,
-    title: 'news.title5',
-    text: 'news.text5'
-  }
-]
-
-  </script>
-  
 
 
 
 
-<style scoped>
-section {
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.news-section {
-    background-color: white;
-    width: 1365px;
-    height: 720px;
-    padding: 80px 48px;
-    border-radius: 16px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.section-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-.section-title > h2{
-    font-size: 40px;
-    font-weight: 600;
-}
-.news-card {
-    width: 342px;
-    height: 388px;
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #F0F0F0;
-}
-
-.news-time {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.news-time>div {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.news-card>h3 {
-    color: #222222;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.news-card>p {
-    color: #222222;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.news-wrapper {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-}
-
-.news-card:hover {
-    border: 1px solid #00B241;
-    background-color: #ECFBF0;
-}
-.list-news{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-}
-.list-news > button{
-    width: 210px;
-    height: 48px;
-    border-radius: 12px;
-    border: 1px solid #F0F0F0;
+<style lang="scss" scoped>
+.section-news {
     background-color: #F9F9F9;
-}
-
-::v-deep(.swiper-button-next),
-::v-deep(.swiper-button-prev) {
-    width: 48px !important;
-    height: 48px !important;
-    border: 1px solid #F0F0F0;
-    background-color: white !important;
-    border-radius: 50% !important;
-    color: black !important;
-}
-
-::v-deep(.swiper-button-next:hover),
-::v-deep(.swiper-button-prev:hover) {
-    background-color: #00B241;
-    color: white;
-}
-
-::v-deep(.swiper-button-next::after),
-::v-deep(.swiper-button-prev::after) {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.news-card:hover h3 {
-    color: #00B241;
-}
-
-
-.hover-item{
-    background-color: #00B241;
-    width: 44px;
-    height: 44px;
+    padding-top: 80px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: absolute;
-    border-radius: 50%;
-    right: 60px;
-    bottom: 20px;
-    display: none;
-    cursor: pointer;
+    font-family: inter;
+
+    .news-section {
+        background-color: white;
+        position: relative;
+        height: 720px;
+        padding: 80px 30px 0px 30px;
+        border-radius: 16px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        .section-title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+
+            >h2 {
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+
+        .news-list {
+            display: flex;
+            gap: 24px;
+        }
+
+        .news-wrapper {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+
+
+            .news-card {
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 12px;
+                border: 1px solid #f0f0f0;
+                position: relative;
+                width: 330px;
+
+                &:hover {
+                    background-color: #00b241;
+                }
+
+                &::after {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .new-banner {
+                    width: 290px;
+                    height: 170px;
+                }
+
+                .news-time {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 16px 0;
+                    width: 290px;
+
+                    div {
+                        display: flex;
+                        gap: 8px;
+                    }
+                }
+
+                >h3 {
+                    color: #222222;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+
+                >p {
+                    color: #222222;
+                    font-size: 14px;
+                    font-weight: 400;
+                    width: 290px;
+
+                }
+
+
+
+                &:hover {
+                    border: 1px solid #00b241;
+                    background-color: #ecfbf0;
+
+                    h3 {
+                        color: #00b241;
+                    }
+
+                    .hover-item {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        .list-news {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            >button {
+                width: 210px;
+                height: 48px;
+                border-radius: 12px;
+                border: 1px solid #f0f0f0;
+                background-color: #f9f9f9;
+                cursor: pointer;
+            }
+        }
+        .carusel-right {
+            background-color: #FFFFFF;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 15px;
+            top: 350px;
+            cursor: pointer;
+        }
+
+        .carusel-left {
+            background-color: #FFFFFF;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 15px;
+            top: 350px;
+            cursor: pointer;
+        }
+
+    }
+
 }
 
 
-.news-card:hover .hover-item {
-    display: flex;
+
+@media (max-width:1400px){
+  .section-wrapper-res{
+    width: 100%;
+    max-width: 1070px;
+    padding: 80px 15px;
+    margin: 0 auto;
+  }
+  .news-section{
+    height: 1000px !important;
+  }
+  .news-list{
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carusel-left{
+    display: none !important;
+  }
+  .carusel-right{
+    display: none !important;
+  }
 }
 
+@media(max-width:870px){
+  .news-list{
+    flex-direction: column;
+    width: 450px;
+  }
+  .news-section{
+    height: 1700px !important;
+  }
+}
 </style>
-
-
