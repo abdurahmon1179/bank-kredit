@@ -216,11 +216,11 @@
         &:hover {
           box-shadow: 0px 18px 40px 0px #7090B01F;
           transition: 1s;
-          border: 1px solid rgb(137, 137, 255);
+          border: 1px solid #10A9FB;
 
           .card-text>button {
             transition: 0.5s;
-            border: 1px solid rgb(137, 137, 255);
+            border: 1px solid #10A9FB;
           }
         }
 

@@ -158,6 +158,10 @@
   }
   .section-footer__top{
     flex-direction: column;
+    padding: 10px;
+  }
+  .section-footer__bottom{
+    padding: 10px;
   }
   .footer-menu > p > br{
     display: none;
@@ -195,6 +199,7 @@
   font-size: 16px !important;
   font-weight: 400 !important;
 }
+
 }
 </style>
 
