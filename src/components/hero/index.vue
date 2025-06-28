@@ -2,192 +2,298 @@
   <section class="hero-section">
     <Container>
       <div class="hero-section__title">
-        <h1>Biz bilan Tadbirkorlikni <span>rivojlantiring!</span></h1>
+        <h1>{{ $t('hero.title') }} <span>{{ $t('hero.titleSpan') }}</span></h1>
       </div>
+
       <div class="hero-section__wrapper">
         <div class="hero-section__currency">
           <div class="currency-wrapper">
             <div class="currency-menu">
               <div class="currency-menu__title">
-                <p>Valyuta kurslari</p>
-                <img src="../../../public/images/currencyarrow.svg" alt="">
+                <p>{{ $t('hero.currencyRates') }}</p>
+                <img src="../../../public/images/currencyarrow.svg" alt="" />
               </div>
               <div class="currency-menu__date">
-                <img src="../../../public/images/currencycalendar.svg" alt="">
-                <p>12.06.2025</p>
+                <img src="../../../public/images/currencycalendar.svg" alt="" />
+                <p>{{ $t('hero.date') }}</p>
               </div>
             </div>
+
             <div class="currency-card__wrapper">
               <div class="currency-card">
-                <img class="currency-card__country" src="../../../public/images/usa.svg" alt="">
+                <img class="currency-card__country" src="../../../public/images/usa.svg" alt="" />
                 <div class="currency-value">
-                  <p>USD = 12920.16</p>
+                  <p>{{ $t('hero.usd') }}</p>
                   <span class="minus">-13</span>
                 </div>
-                <img src="../../../public/images/currencyminus.svg" alt="">
+                <img src="../../../public/images/currencyminus.svg" alt="" />
               </div>
 
               <div class="currency-card">
-                <img class="currency-card__country" src="../../../public/images/euro.svg" alt="">
+                <img class="currency-card__country" src="../../../public/images/euro.svg" alt="" />
                 <div class="currency-value">
-                  <p>EUR = 14681.18</p>
+                  <p>{{ $t('hero.eur') }}</p>
                   <span class="minus">-38.05</span>
                 </div>
-                <img src="../../../public/images/currencyminus.svg" alt="">
+                <img src="../../../public/images/currencyminus.svg" alt="" />
               </div>
 
               <div class="currency-card none-3">
-                <img class="currency-card__country" src="../../../public/images/russia.svg" alt="">
+                <img class="currency-card__country" src="../../../public/images/russia.svg" alt="" />
                 <div class="currency-value">
-                  <p>RUB = 158.61</p>
+                  <p>{{ $t('hero.rub') }}</p>
                   <span class="plus">+13</span>
                 </div>
-                <img src="../../../public/images/currencyplus.svg" alt="">
+                <img src="../../../public/images/currencyplus.svg" alt="" />
               </div>
 
-              <div class="currency-card ">
-                <img class="currency-card__country" src="../../../public/images/uk.svg" alt="">
+              <div class="currency-card">
+                <img class="currency-card__country" src="../../../public/images/uk.svg" alt="" />
                 <div class="currency-value">
-                  <p>GBP = 17262.63</p>
+                  <p>{{ $t('hero.gbp') }}</p>
                   <span class="minus">-61.34</span>
                 </div>
-                <img src="../../../public/images/currencyminus.svg" alt="">
+                <img src="../../../public/images/currencyminus.svg" alt="" />
               </div>
 
               <div class="currency-card none none-2">
-                <img class="currency-card__country" src="../../../public/images/japan.svg" alt="">
+                <img class="currency-card__country" src="../../../public/images/japan.svg" alt="" />
                 <div class="currency-value">
-                  <p>JPY = 90.28</p>
+                  <p>{{ $t('hero.jpy') }}</p>
                   <span class="minus">-61.34</span>
                 </div>
-                <img src="../../../public/images/currencyminus.svg" alt="">
+                <img src="../../../public/images/currencyminus.svg" alt="" />
               </div>
 
-              <div class="currency-card ">
-                <img class="currency-card__country" src="../../../public/images/switzerland.svg" alt="">
+              <div class="currency-card">
+                <img class="currency-card__country" src="../../../public/images/switzerland.svg" alt="" />
                 <div class="currency-value">
-                  <p>CHF = 1564.52</p>
+                  <p>{{ $t('hero.chf') }}</p>
                   <span class="minus">-61.34</span>
                 </div>
-                <img src="../../../public/images/currencyminus.svg" alt="">
+                <img src="../../../public/images/currencyminus.svg" alt="" />
               </div>
 
               <div class="currency-card none">
-                <img class="currency-card__country" src="../../../public/images/china.svg" alt="">
+                <img class="currency-card__country" src="../../../public/images/china.svg" alt="" />
                 <div class="currency-value">
-                  <p>CNY = 1778.66</p>
+                  <p>{{ $t('hero.cny') }}</p>
                   <span class="plus">+0.07</span>
                 </div>
-                <img src="../../../public/images/currencyplus.svg" alt="">
+                <img src="../../../public/images/currencyplus.svg" alt="" />
               </div>
+
               <div class="hero-btn-wrapper-currency">
-                <button>Barchasini ko'rish</button>
+                <button>{{ $t('hero.viewAll') }}</button>
               </div>
             </div>
           </div>
         </div>
 
-
         <div class="hero-section-wrapper-right">
           <div class="hero-section__stats">
             <div class="stats-item">
-              <img src="../../../public/images/stat1.svg" alt="">
+              <img src="../../../public/images/stat1.svg" alt="" />
               <div class="stats-item__info">
-                <p>Asosiy stavka</p>
+                <p>{{ $t('hero.baseRate') }}</p>
                 <strong>14%</strong>
               </div>
             </div>
 
             <div class="stats-item">
-              <img src="../../../public/images/stats2.svg" alt="">
+              <img src="../../../public/images/stats2.svg" alt="" />
               <div class="stats-item__info">
-                <p>Yillik inflyatsiya</p>
+                <p>{{ $t('hero.annualInflation') }}</p>
                 <strong>10,3%</strong>
               </div>
             </div>
 
             <div class="stats-item">
-              <img src="../../../public/images/stat3.svg" alt="">
+              <img src="../../../public/images/stat3.svg" alt="" />
               <div class="stats-item__info">
-                <p>Inflyatsion target</p>
+                <p>{{ $t('hero.inflationTarget') }}</p>
                 <strong>55%</strong>
               </div>
             </div>
           </div>
+
           <div class="section-hero-intro-wrapper">
             <div class="national-currency__item">
               <div class="national-currency__title">
-                <p>majburiy zahira me‘yorlari</p>
+                <p>{{ $t('hero.reserveTitle') }}</p>
               </div>
+
               <div class="national-currency__card">
-                <strong>Milliy valyuta</strong>
-                <p class="national-currency-card-desc">O‘zbekiston bank tizimi tomonidan saqlanayotgan majburiy
-                  zahiralari</p>
+                <strong>{{ $t('hero.nationalCurrency') }}</strong>
+                <p class="national-currency-card-desc">
+                  {{ $t('hero.reserveDescription') }}
+                </p>
                 <p class="national-currency-value">
-                  185
-                  <span>Trilliyon so‘m</span>
+                  {{ $t('hero.reserveAmount') }}
+                  <span>{{ $t('hero.reserveUnit') }}</span>
                 </p>
               </div>
 
-
               <div class="national-currency__card">
-                <strong>Milliy valyuta</strong>
-                <p class="national-currency-card-desc">O‘zbekiston bank tizimi tomonidan saqlanayotgan majburiy
-                  zahiralari</p>
+                <strong>{{ $t('hero.nationalCurrency') }}</strong>
+                <p class="national-currency-card-desc">
+                  {{ $t('hero.reserveDescription') }}
+                </p>
                 <p class="national-currency-value">
-                  185
-                  <span>Trilliyon so‘m</span>
+                  {{ $t('hero.reserveAmount') }}
+                  <span>{{ $t('hero.reserveUnit') }}</span>
                 </p>
               </div>
             </div>
 
             <div class="hero-section-international">
               <div class="international-title">
-                <p>O‘rtacha tortilgan foiz stavkalar (mart, 2025 yil)</p>
+                <p>{{ $t('hero.interestTitle') }}</p>
               </div>
               <div class="hero-international__wrapper">
                 <div class="hero-rate-wrapper">
                   <div class="hero-rate__card">
-                    <p class="hero-rate-card-title">Milliy valyutada</p>
+                    <p class="hero-rate-card-title">{{ $t('hero.inNationalCurrency') }}</p>
                     <div class="hero-rate-info-wrapper">
-                      <p>1 yilgacha bo‘lgan jami muddatli depozitlar bo‘yicha</p>
+                      <p>{{ $t('hero.depositDescription1') }}</p>
                       <strong>17,2%</strong>
                     </div>
                     <div class="hero-rate-info-second">
-                      <p>1 yilgacha bo‘lgan jami muddatli depozitlar bo‘yicha</p>
+                      <p>{{ $t('hero.depositDescription2') }}</p>
                       <strong>19,3%</strong>
                     </div>
                   </div>
 
                   <div class="hero-rate__card">
-                    <p class="hero-rate-card-title">Milliy valyutada</p>
+                    <p class="hero-rate-card-title">{{ $t('hero.inNationalCurrency') }}</p>
                     <div class="hero-rate-info-wrapper">
-                      <p>1 yilgacha bo‘lgan jami muddatli depozitlar bo‘yicha</p>
+                      <p>{{ $t('hero.depositDescription1') }}</p>
                       <strong>17,2%</strong>
                     </div>
                     <div class="hero-rate-info-second">
-                      <p>1 yilgacha bo‘lgan jami muddatli depozitlar bo‘yicha</p>
+                      <p>{{ $t('hero.depositDescription2') }}</p>
                       <strong>19,3%</strong>
                     </div>
                   </div>
                 </div>
+
                 <div class="stat-line-graph">
-                  <h3>O‘rtacha stavkalar grafigi</h3>
-                  <VueApexCharts :options="chartOptions" :series="series" :width="330" />
-
-
+                  <h3>{{ $t('hero.graphTitle') }}</h3>
+                  <VueApexCharts :options="chartOptions" :series="series" :height="300" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="hero-btn-wrapper">
-        <button>Barchasini ko'rish</button>
+        <button>{{ $t('hero.viewAll') }}</button>
       </div>
     </Container>
   </section>
 </template>
+
+
+
+
+
+<script setup>
+import Container from "../layouts/index.vue"
+import VueApexCharts from "vue3-apexcharts";
+
+const series = [
+  {
+    name: "Tovar Narxi",
+    data: [20.0, 21.0, 22.0, 22.5],
+  },
+];
+
+const chartOptions = {
+  chart: {
+    type: "area",
+    height: 400,
+    zoom: {
+      enabled: true,
+      type: 'x',
+      autoScaleYaxis: false,
+    },
+    toolbar: {
+      show: false,
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  markers: {
+    size: 4,
+    colors: ['#00B241'],
+    strokeColors: '#fff',
+    strokeWidth: 2,
+  },
+  stroke: {
+    curve: 'smooth',
+    width: 3,
+    colors: ['#00B2418A']
+  },
+  fill: {
+    type: 'gradient',
+    gradient: {
+      shadeIntensity: 1,
+      opacityFrom: 0.5,
+      opacityTo: 0,
+      stops: [0, 90, 100],
+    }
+  },
+  yaxis: {
+    min: 20,
+    max: 22.5,
+    tickAmount: 6,
+    labels: {
+      formatter(val) {
+        return val.toFixed(1);
+      },
+    },
+  },
+  xaxis: {
+    type: "category",
+    categories: ["2022", "2023", "2024", "2025"],
+    labels: {
+      style: {
+        fontSize: "12px",
+      },
+    },
+  },
+  tooltip: {
+    y: {
+      formatter(val) {
+        return val.toFixed(2);
+      },
+    },
+  },
+  legend: {
+    show: true,
+    position: "top",
+    horizontalAlign: "left",
+  },
+  responsive: [
+    {
+      breakpoint: 1400,
+      options: { chart: { height: 200, width: 450 } },
+    },
+    {
+      breakpoint: 992,
+      options: { chart: { height: 230, width: 570 } },
+    },
+    {
+      breakpoint: 890,
+      options: { chart: { height: 200, width: 500 } }, // кичикроқ экранда пастроқ
+    },
+  ],
+};
+</script>
+
+
 
 
 
@@ -303,7 +409,7 @@
         justify-content: space-between;
         gap: 24px;
         box-shadow: 0px 18px 40px 0px rgba(112, 144, 176, 0.12);
-        width: 1040px;
+        width: 1075px;
 
         .stats-item {
           background-color: white;
@@ -399,7 +505,6 @@
         .hero-section-international {
           background-color: #F9F9F9;
           box-shadow: 0px 18px 40px 0px #7090B01F;
-          width: 100%;
           padding: 16px;
           border: 1px solid #E9E9E9;
           border-radius: 12px;
@@ -415,13 +520,11 @@
           .hero-international__wrapper {
             display: flex;
             gap: 16px;
-
             .hero-rate-wrapper {
               display: flex;
               flex-direction: column;
               align-items: start;
               gap: 16px;
-
               .hero-rate__card {
                 background-color: white;
                 padding: 16px;
@@ -489,7 +592,7 @@
             .stat-line-graph {
               background-color: white;
               height: 370px;
-              width: 100%;
+              width: 365px;
               border: 1px solid #E9E9E9;
               border-radius: 8px;
 
@@ -521,7 +624,9 @@
     max-width: 1070px;
     padding: 0 15px;
   }
-
+  .hero-section{
+    margin-top: 50px;
+  }
   .hero-section__title {
     font-size: 24px;
   }
@@ -653,7 +758,7 @@
 
   .stat-line-graph {
     height: 240px !important;
-
+    width: 440px !important;
     h3 {
       padding: 8px 16px 0 16px !important;
     }
@@ -667,7 +772,9 @@
     font-size: 16px;
     font-weight: 600;
   }
-
+  .hero-section{
+    
+  }
   .hero-section__currency {
     width: 250px !important;
   }
@@ -770,6 +877,7 @@
 
   .stat-line-graph {
     height: 260px !important;
+    width: 575px !important;
   }
 
   .hero-btn-wrapper {
@@ -852,78 +960,92 @@
   .hero-section__currency {
     height: 605px !important;
   }
-  .hero-btn-wrapper{
+
+  .hero-btn-wrapper {
     display: none;
   }
-  .hero-section__stats{
+
+  .hero-section__stats {
     width: 400px !important;
-    .stats-item{
+
+    .stats-item {
       min-width: 100px !important;
       padding: 15px !important;
     }
-    .stats-item > img{
+
+    .stats-item>img {
       width: 24px;
       height: 24px;
     }
-    .stats-item__info{
+
+    .stats-item__info {
       flex-direction: column;
       justify-content: start !important;
       align-items: start !important;
     }
   }
-  .national-currency__item{
+
+  .national-currency__item {
     display: inline-block !important;
   }
-  .none{
+
+  .none {
     display: flex !important;
   }
-  .none-2{
+
+  .none-2 {
     display: none !important;
   }
 }
 
-@media (max-width:690px){
-  .hero-section__currency{
+@media (max-width:690px) {
+  .hero-section__currency {
     margin-top: 125px;
     height: 480px !important;
   }
-  .hero-section__stats{
+
+  .hero-section__stats {
     margin-left: -255px;
     width: 475px !important;
   }
-  .none{
+
+  .none {
     display: none !important;
   }
-  .none-3{
+
+  .none-3 {
     display: none !important;
   }
 
 }
 
-@media (max-width:515px){
-  .hero-section__wrapper{
+@media (max-width:515px) {
+  .hero-section__wrapper {
     flex-direction: column !important;
     margin-left: 100px;
     margin-top: -120px;
   }
-  .hero-section__stats{
+
+  .hero-section__stats {
     margin-left: 0px;
     flex-direction: column;
     align-items: center;
     width: 250px !important;
-    .stats-item{
+
+    .stats-item {
       max-width: 400px !important;
     }
   }
-  .national-currency__item{
+
+  .national-currency__item {
     min-width: 250px !important;
   }
 }
-@media (max-width:505px){
 
-}
-@media (max-width:450px){
-  .hero-section__wrapper{
+@media (max-width:505px) {}
+
+@media (max-width:450px) {
+  .hero-section__wrapper {
     margin-left: 50px !important;
   }
 }
@@ -931,105 +1053,4 @@
 
 
 
-<script setup>
-import Container from "../layouts/index.vue"
-import VueApexCharts from "vue3-apexcharts";
 
-const series = [
-  {
-    name: "Tovar Narxi",
-    data: [20.0, 21.0, 22.0, 22.5],
-  },
-];
-
-const chartOptions = {
-  chart: {
-    type: "area",
-    zoom: {
-      enabled: true,
-      type: 'x',
-      autoScaleYaxis: false,
-    },
-    toolbar: {
-      show: false,
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  markers: {
-    size: 4,
-    colors: ['#00B241'],
-    strokeColors: '#fff',
-    strokeWidth: 2,
-  },
-  stroke: {
-    curve: 'smooth',
-    width: 3,
-    colors: ['#00B2418A']
-  },
-  fill: {
-    type: 'gradient',
-    gradient: {
-      shadeIntensity: 1,
-      opacityFrom: 0.5,
-      opacityTo: 0,
-      stops: [0, 90, 100],
-    }
-  },
-  yaxis: {
-    min: 20,
-    max: 22.5,
-    tickAmount: 6,
-    labels: {
-      formatter(val) {
-        return val.toFixed(1);
-      },
-    },
-  },
-  xaxis: {
-    type: "category",
-    categories: ["2022", "2023", "2024", "2025"],
-    labels: {
-      style: {
-        fontSize: "12px",
-      },
-    },
-  },
-  tooltip: {
-    y: {
-      formatter(val) {
-        return val.toFixed(2);
-      },
-    },
-  },
-  legend: {
-    show: true,
-    position: "top",
-    horizontalAlign: "left",
-  },
-  responsive: [{
-    breakpoint: 1400,
-    options: {
-      chart: {
-        height: 200,
-        width: 450,
-      }
-    },
-    breakpoint: 992,
-    options: {
-      chart: {
-        height: 230,
-        width: 570,
-      }
-    },
-    breakpoint: 890,
-    options: {
-      chart: {
-        height: 230,
-        width: 500,
-      }
-    }
-  }]
-};
-</script>

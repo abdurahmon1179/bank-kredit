@@ -1,0 +1,99 @@
+{
+    "nav": {
+        "kreditMahsulotlar": "CREDIT PRODUCTS",
+        "arizaYuborish": "SUBMIT APPLICATION",
+        "arizaniTekshirish": "CHECK APPLICATION",
+        "kirish": "LOGIN"
+    },
+    "lang": {
+        "uzbek": "Uz",
+        "russian": "Ru",
+        "en": "En"
+    },
+    "header": {
+        "boshSahifa": "Main Homepage",
+        "banklar": "Bank Partners",
+        "murojaat": "Customer Support",
+        "arizaQoldirish": "Apply",
+        "moliyaviySavodhonlik": "Financial",
+        "yangiliklar": "News"
+    },
+    "hero": {
+        "title": "Grow your business",
+        "titleSpan": "with us!",
+        "currencyRates": "Exchange Rates",
+        "date": "12.06.2025",
+        "usd": "USD = 12920.16",
+        "eur": "EUR = 14681.18",
+        "rub": "RUB = 158.61",
+        "gbp": "GBP = 17262.63",
+        "jpy": "JPY = 90.28",
+        "chf": "CHF = 1564.52",
+        "cny": "CNY = 1778.66",
+        "viewAll": "View All",
+        "baseRate": "Base Rate",
+        "annualInflation": "Annual Inflation",
+        "inflationTarget": "Inflation Target",
+        "reserveTitle": "Mandatory Reserve Ratios",
+        "nationalCurrency": "National Currency",
+        "reserveDescription": "Reserves held by the banking system of Uzbekistan",
+        "reserveAmount": "185",
+        "reserveUnit": "Trillion UZS",
+        "interestTitle": "Average Interest Rates (March 2025)",
+        "inNationalCurrency": "In National Currency",
+        "depositDescription1": "For all term deposits under 1 year",
+        "depositDescription2": "For all term deposits under 1 year",
+        "graphTitle": "Interest Rate Graph"
+    },
+    "service": {
+  "titleFirst": "Interactive",
+  "titleSecond": "Services",
+  "creditTitle": "Credit Products",
+  "creditDesc": "Choose the loan that fits your needs: consumer, mortgage or business. Easy terms and fast processing.",
+  "finEduTitle": "Financial Literacy",
+"finEduDesc": "Learn to manage money wisely: budgeting, saving, investing, controlling expenses, and building financial discipline. Your first step toward lasting financial independence and success.",
+  "contactTitle": "Leave a Request",
+  "contactDesc": "Have a question, suggestion or issue? We are always ready to listen. Submit an online request and get a quick response.",
+  "applyTitle": "Submit Application",
+  "applyDesc": "Have a question, suggestion or issue? We are always ready to listen. Submit an online request and get a quick response.",
+  "more": "Learn More"
+},
+"banks": {
+  "title": "Banks in",
+  "titleDesc": " Uzbekistan",
+  "phone": "Phone number:",
+  "contact": "Call center:",
+  "adres": "Address:",
+  "email": "Email:",
+  "more": "Bank page"
+},
+"news": {
+  "latest": "Latest",
+  "newsWord": "news",
+  "allNewsBtn": "All news",
+
+  "title1": "News headline 1",
+  "text1": "The news text will be here. This is a space for a short description.",
+  "title2": "News headline 2",
+  "text2": "The news text will be here. This is a space for a short description.",
+  "title3": "News headline 3",
+  "text3": "The news text will be here. This is a space for a short description.",
+  "title4": "News headline 4",
+  "text4": "The news text will be here. This is a space for a short description.",
+  "title5": "News headline 5",
+  "text5": "The news text will be here. This is a space for a short description."
+},
+"footer": {
+  "contactsTitle": "Contacts",
+  "description": "Bank-kredit.uz is a platform that includes credit products and services offered by commercial banks for business entities.",
+  "emailTitle": "Email Address",
+  "phoneTitle": "Phone Number",
+  "addressTitle": "Address",
+  "address": "Kichik Xalqa Yo‘li 38/1, 100084, Tashkent, Uzbekistan",
+  "copyright": "Caroselling Copyright 2025"
+}
+
+
+
+
+}

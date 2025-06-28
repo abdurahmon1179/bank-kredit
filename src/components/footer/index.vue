@@ -4,50 +4,55 @@
       <div class="section-footer__top">
         <div class="footer-menu">
           <div class="wrapper-res">
-            <h2>Kontaktlar</h2>
-          <div class="footer-social-media">
-            <img src="../../../public/images/instagram.svg" alt="">
-            <img src="../../../public/images/youtube.svg" alt="">
-            <img src="../../../public/images/telegram.svg" alt="">
+            <h2>{{ $t('footer.contactsTitle') }}</h2>
+            <div class="footer-social-media">
+              <img src="../../../public/images/instagram.svg" alt="Instagram" />
+              <img src="../../../public/images/youtube.svg" alt="YouTube" />
+              <img src="../../../public/images/telegram.svg" alt="Telegram" />
+            </div>
           </div>
-          </div>
-          <p>Bank-kredit.uz - Тадбиркорлик субъектлари учун тижорат банклари <br> томонидан таклиф қилинаётган кредит маҳсулотлари, <br>хизматларини ўз ичига олган платформа.</p>
+          <p>{{ $t('footer.description') }}</p>
         </div>
+
         <div class="section-footer__info">
           <div class="footer-contact-wrapper">
             <div class="footer-email">
               <div class="email-title">
-                <img src="../../../public/images/footeremail.svg" alt="">
-                <p>Elektron manzil</p>
+                <img src="../../../public/images/footeremail.svg" alt="Email" />
+                <p>{{ $t('footer.emailTitle') }}</p>
               </div>
               <h3>info@bank-kredit.uz</h3>
             </div>
 
             <div class="footer-email">
               <div class="email-title">
-                <img src="../../../public/images/callfooter.svg" alt="">
-                <p>Telefon raqam</p>
+                <img src="../../../public/images/callfooter.svg" alt="Call" />
+                <p>{{ $t('footer.phoneTitle') }}</p>
               </div>
               <h3>+998 71 200 00 44</h3>
             </div>
           </div>
+
           <div class="footer-adres">
             <div class="adres-title">
-              <img src="../../../public/images/footerloc.svg" alt="">
-              <p>Manzil</p>
+              <img src="../../../public/images/footerloc.svg" alt="Location" />
+              <p>{{ $t('footer.addressTitle') }}</p>
             </div>
-            <h3 class="adres-desc">Кичик Халқа Йўли 38/1, 100084, Тошкент, Тошкент, Ўзбекистон</h3>
+            <h3 class="adres-desc">{{ $t('footer.address') }}</h3>
           </div>
         </div>
       </div>
+
       <div class="footer-hr"></div>
+
       <div class="section-footer__bottom">
-        <p>Caroselling Copyright 2025</p>
+        <p>{{ $t('footer.copyright') }}</p>
         <p style="text-decoration: underline;">Realsoft</p>
       </div>
     </Container>
   </footer>
-  </template>
+</template>
+
   
 <style lang="scss" scoped>
 .section-footer {

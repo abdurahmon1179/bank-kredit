@@ -1,108 +1,100 @@
 {
-    "nav": {
-      "kreditMahsulotlar": "KREDIT MAHSULOTLAR",
-      "arizaYuborish": "ARIZA YUBORISH",
-      "arizaniTekshirish": "ARIZANI TEKSHIRISH",
-      "kirish": "KIRISH"
-    },
-    "lang": {
-      "uzbek": "O'zbekcha",
-      "russian": "Ruscha"
-    },
-    "header": {
-      "boshSahifa": "Bosh sahifa",
-      "banklar": "Banklar",
-      "murojaat": "Murojaat",
-      "arizaQoldirish": "Ariza qoldirish",
-      "moliyaviySavodhonlik": "Moliyaviy savodhonlik",
-      "yangiliklar": "Yangiliklar"
-    },
-    "hero": {
-      "title": "BIZ BILAN TADBIRKORLIKNI",
-      "highlight": "RIVOJLANTIRING!"
-    },
-    "currency": {
-      "title": "Valyuta kurslari"
-    },
-    "stats": {
-      "mainRate": "Asosiy stavka",
-      "inflation": "Yillik inflyatsiya",
-      "target": "Inflyatsion target"
-    },
-    "reserve": {
-      "title": "Majburiy zahira me‘yorlari",
-      "nationalCurrency": "Milliy valyuta",
-      "description": "O‘zbekiston bank tizimi tomonidan saqlanayotgan majburiy zahiralari",
-      "unit": "Trilliyon so‘m"
-    },
-    "averageRates": {
-      "title": "O‘rtacha tortilgan foiz stavkalar (mart, 2025 yil)",
-      "currency": "Milliy valyutada",
-      "text1": "1 yilgacha bo‘lgan jami \n muddatli depozitlar bo‘yicha",
-      "text2": "1 yilgacha bo‘lgan jami \n muddatli depozitlar bo‘yicha",
-      "graphTitle": "O‘rtacha tortilgan foiz stavkalar"
-    },
-    "service": {
-      "title": "Interaktiv",
-      "highlight": "xizmatlar",
-      "cards": {
-        "kredit": {
-          "title": "Kredit mahsulotlari",
-          "text": "Sizning ehtiyojlaringiz uchun mos kredit turlari. Iste’mol, ipoteka va biznes kreditlari. Qulay shartlar va tezkor rasmiylashtirish."
-        },
-        "savodxonlik": {
-          "title": "Moliyaviy savodxonlik",
-          "text": "Pulni to‘g‘ri boshqarishni o‘rganing. Budjet tuzish, tejash va investitsiya bo‘yicha maslahatlar. Moliyaviy mustaqillikka birinchi qadam."
-        },
-        "murojaat": {
-          "title": "Murojaat qoldirish",
-          "text": "Savolingiz, taklifingiz yoki muammoyingiz bormi? Biz har doim eshitishga tayyormiz. Online murojaat yuboring — tez javob oling."
-        },
-        "ariza": {
-          "title": "Ariza qoldirish",
-          "text": "Kredit olish uchun ariza topshirish juda oson. Kerakli ma’lumotlarni to‘ldiring va yuboring. Arizangiz tezda ko‘rib chiqiladi."
-        },
-        "button": "Batafsil"
-      }
-    },
-    "banks": {
-      "title": "O‘zbekistondagi <span style='color: #00B241;'>tijorat banklari</span>",
-      "allBanksButton": "Barcha Banklar",
-      "agrobank": {
-        "name": "Agrobank",
-        "phoneLabel": "Telefon raqam:",
-        "callCenterLabel": "Aloqa markazi:",
-        "addressLabel": "Manzili:",
-        "address": "Kichik halqa yo‘li 67",
-        "emailLabel": "E-manzil:",
-        "email": "Elektronmanzil@gmail.com",
-        "button": "Bank Sahifasi"
-      }
-    },
-    "news": {
-      "Songgi": "So‘nggi",
-      "yangiliklar": "yangiliklar",
-      "BarchaYangiliklar": "Barcha Yangiliklar",
-      "title1": "Saudiya arabistonida muhim kelishuvga erishdi",
-      "text1": "Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.",
-      "title2": "\"O‘zmilliybank\" AJ va Xitoy Eksimbanki o‘rtasida 2 mlrd...",
-      "text2": "Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.",
-      "title3": "\"Asakabank\" AJ Xitoyning Zheshang banki bilan hamkor....",
-      "text3": "Ma’lumki, joriy yilning 11-13-may kunlari Saudiya Arabistonining Jidda shahrida Islom taraqqiyot banki guruhi vakillarining 48-yillik yig‘ilishi bo‘lib o‘tdi.",
-      "title4": "Yangi loyiha ishga tushirildi",
-      "text4": "O‘zbekiston hukumati yangi texnopark qurilishi haqida e’lon qildi.",
-      "title5": "Bank sohasida raqamli transformatsiya",
-      "text5": "Banklar mijozlar uchun yangi onlayn xizmatlarni ishga tushirmoqda.",
-      "BarchaYangiliklar": "Barcha Yangiliklar"
-    },
-    "footer": {
-      "kontaktlar": "Kontaktlar",
-      "description": "Bank-kredit.uz - Tadbirkorlik subyektlari uchun tijorat banklari tomonidan taklif qilinayotgan kredit mahsulotlari, xizmatlarini o‘z ichiga olgan platforma.",
-      "emailLabel": "Elektron manzil",
-      "phoneLabel": "Telefon raqam",
-      "addressLabel": "Manzil",
-      "address": "Kichik Halqa Yo‘li 38/1, 100084, Toshkent, Toshkent, O‘zbekiston",
-      "copyright": "Caroselling mualliflik huquqi 2025"
-    }
-  }
-  
+  "nav": {
+    "kreditMahsulotlar": "KREDIT MAHSULOTLAR",
+    "arizaYuborish": "ARIZA YUBORISH",
+    "arizaniTekshirish": "ARIZANI TEKSHIRISH",
+    "kirish": "KIRISH"
+  },
+  "lang": {
+    "uzbek": "O'z",
+    "russian": "Ru",
+    "en": "En"
+  },
+  "header": {
+    "boshSahifa": "Bosh sahifa",
+    "banklar": "Banklar",
+    "murojaat": "Murojaat",
+    "arizaQoldirish": "Ariza qoldirish",
+    "moliyaviySavodhonlik": "Moliyaviy savodhonlik",
+    "yangiliklar": "Yangiliklar"
+  },
+  "hero": {
+    "title": "Biz bilan Tadbirkorlikni",
+    "titleSpan": "rivojlantiring!",
+    "currencyRates": "Valyuta kurslari",
+    "date": "12.06.2025",
+    "usd": "USD = 12920.16",
+    "eur": "EUR = 14681.18",
+    "rub": "RUB = 158.61",
+    "gbp": "GBP = 17262.63",
+    "jpy": "JPY = 90.28",
+    "chf": "CHF = 1564.52",
+    "cny": "CNY = 1778.66",
+    "viewAll": "Barchasini ko'rish",
+    "baseRate": "Asosiy stavka",
+    "annualInflation": "Yillik inflyatsiya",
+    "inflationTarget": "Inflyatsion target",
+    "reserveTitle": "majburiy zahira me‘yorlari",
+    "nationalCurrency": "Milliy valyuta",
+    "reserveDescription": "O‘zbekiston bank tizimi tomonidan saqlanayotgan majburiy zahiralari",
+    "reserveAmount": "185",
+    "reserveUnit": "Trilliyon so‘m",
+    "interestTitle": "O‘rtacha tortilgan foiz stavkalar (mart, 2025 yil)",
+    "inNationalCurrency": "Milliy valyutada",
+    "depositDescription1": "1 yilgacha bo‘lgan jami muddatli depozitlar bo‘yicha",
+    "depositDescription2": "1 yilgacha bo‘lgan jami muddatli depozitlar bo‘yicha",
+    "graphTitle": "O‘rtacha stavkalar grafigi"
+  },
+  "service": {
+  "titleFirst": "Interaktiv",
+  "titleSecond": "xizmatlar",
+  "creditTitle": "Kredit mahsulotlari",
+  "creditDesc": "Sizning ehtiyojlaringiz uchun mos kredit turlari — iste’mol, ipoteka va biznes kreditlari. Qulay shartlar va tezkor rasmiylashtirish.",
+  "finEduTitle": "Moliyaviy savodxonlik",
+  "finEduDesc": "Pulni to‘g‘ri boshqarishni o‘rganing: budjet tuzish, tejash va investitsiya bo‘yicha maslahatlar. Moliyaviy mustaqillikka qadam.",
+  "contactTitle": "Murojaat qoldirish",
+  "contactDesc": "Savolingiz, taklifingiz yoki muammoyingiz bormi? Biz har doim eshitishga tayyormiz. Onlayn murojaat yuboring — tez javob oling.",
+  "applyTitle": "Ariza qoldirish",
+  "applyDesc": "Savolingiz, taklifingiz yoki muammoyingiz bormi? Biz har doim eshitishga tayyormiz. Onlayn murojaat yuboring — tez javob oling.",
+  "more": "Batafsil"
+},
+
+ "banks": {
+  "title": "O‘zbekistondagi",
+  "titleDesc": " tijorat banklari",
+  "phone": "Telefon raqam:",
+  "contact": "Aloqa markazi:",
+  "adres": "Manzil:",
+  "email": "E-manzil:",
+  "more": "Bank sahifasi"
+},
+
+"news": {
+  "latest": "So‘nggi",
+  "newsWord": "yangiliklar",
+  "allNewsBtn": "Barcha yangiliklar",
+
+  "title1": "Yangilik sarlavhasi 1",
+  "text1": "Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy.",
+  "title2": "Yangilik sarlavhasi 2",
+  "text2": "Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy.",
+  "title3": "Yangilik sarlavhasi 3",
+  "text3": "Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy.",
+  "title4": "Yangilik sarlavhasi 4",
+  "text4": "Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy.",
+  "title5": "Yangilik sarlavhasi 5",
+  "text5": "Bu yerda yangilik matni bo‘ladi. Bu qisqacha tavsif uchun joy."
+},
+
+
+"footer": {
+  "contactsTitle": "Kontaktlar",
+  "description": "Bank-kredit.uz — Tadbirkorlik subyektlari uchun tijorat banklari tomonidan taklif qilinayotgan kredit mahsulotlari va xizmatlarini o‘z ichiga olgan platforma.",
+  "emailTitle": "Elektron manzil",
+  "phoneTitle": "Telefon raqam",
+  "addressTitle": "Manzil",
+  "address": "Kichik Xalqa Yo‘li 38/1, 100084, Toshkent, Toshkent, O‘zbekiston",
+  "copyright": "Caroselling Copyright 2025"
+}
+
+}

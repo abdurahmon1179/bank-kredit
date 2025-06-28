@@ -1,93 +1,95 @@
 <template>
-  <section class="section-service">
-    <div class="section-service__outlay">
-      <Container>
+  <Container>
+    <section class="section-service">
+      <div class="section-service__outlay">
+
         <div class="section-service__title">
-          <p>Interaktiv <span>xizmatlar</span></p>
+          <p>{{ $t('service.titleFirst') }} <span>{{ $t('service.titleSecond') }}</span></p>
         </div>
+
         <div class="section-service__wrapper">
+          <!-- 1-CARD -->
           <div class="section-service__card">
             <div class="card-text">
-              <strong>Kredit mahsulotlari</strong>
-              <p class="service-card-desc">Sizning ehtiyojlaringiz uchun mos kredit turlari. Iste’mol, ipoteka va biznes
-                kreditlari.
-                <br> Qulay shartlar va tezkor rasmiylashtirish.
+              <strong>{{ $t('service.creditTitle') }}</strong>
+              <p class="service-card-desc">
+                {{ $t('service.creditDesc') }}
               </p>
               <button>
-                <p>Batafsil</p>
-                <img src="../../../public/images/cardarrow.svg" alt="">
+                <p>{{ $t('service.more') }}</p>
+                <img src="../../../public/images/cardarrow.svg" alt="" />
               </button>
             </div>
             <div class="card-img">
-              <img src="../../../public/images/cardimg1.svg" alt="">
+              <img src="../../../public/images/cardimg1.svg" alt="" />
             </div>
           </div>
 
-
+          <!-- 2-CARD -->
           <div class="section-service__card service-card-blue">
             <div class="card-text">
-              <strong class="res-str">Moliyaviy savodxonlik</strong>
-              <p class="service-card-desc service-card-second-p res-p">Pulni to‘g‘ri boshqarishni o‘rganing. <br>
-                Budjet tuzish, tejash va investitsiya bo‘yicha maslahatlar. Moliyaviy mustaqillikka birinchi qadam.
+              <strong class="res-str">{{ $t('service.finEduTitle') }}</strong>
+              <p class="service-card-desc service-card-second-p res-p">
+                {{ $t('service.finEduDesc') }}
               </p>
               <button class="service-card-second-btn">
-                <p>Batafsil</p>
-                <img src="../../../public/images/cardarrow.svg" alt="">
+                <p>{{ $t('service.more') }}</p>
+                <img src="../../../public/images/cardarrow.svg" alt="" />
               </button>
             </div>
             <div class="card-img">
-              <img src="../../../public/images/cardimg2.svg" alt="">
+              <img src="../../../public/images/cardimg2.svg" alt="" />
             </div>
           </div>
 
-
+          <!-- 3-CARD -->
           <div class="section-service__card service-card-blue">
             <div class="card-text">
-              <strong>Murojaat qoldirish</strong>
-              <p class="service-card-desc">Savolingiz, taklifingiz yoki muammoyingiz bormi? Biz har doim eshitishga
-                tayyormiz. <br>
-                Online murojaat yuboring — tez javob oling.
+              <strong>{{ $t('service.contactTitle') }}</strong>
+              <p class="service-card-desc">
+                {{ $t('service.contactDesc') }}
               </p>
               <button>
-                <p>Batafsil</p>
-                <img src="../../../public/images/cardarrow.svg" alt="">
+                <p>{{ $t('service.more') }}</p>
+                <img src="../../../public/images/cardarrow.svg" alt="" />
               </button>
             </div>
             <div class="card-img">
-              <img src="../../../public/images/cardimg3.svg" alt="">
+              <img src="../../../public/images/cardimg3.svg" alt="" />
             </div>
           </div>
 
-
+          <!-- 4-CARD -->
           <div class="section-service__card">
             <div class="card-text">
-              <strong>ariza qoldirish</strong>
-              <p class="service-card-desc">Savolingiz, taklifingiz yoki muammoyingiz bormi? Biz har doim eshitishga
-                tayyormiz. <br>
-                Online murojaat yuboring — tez javob oling.
+              <strong>{{ $t('service.applyTitle') }}</strong>
+              <p class="service-card-desc">
+                {{ $t('service.applyDesc') }}
               </p>
               <button>
-                <p>Batafsil</p>
-                <img src="../../../public/images/cardarrow.svg" alt="">
+                <p>{{ $t('service.more') }}</p>
+                <img src="../../../public/images/cardarrow.svg" alt="" />
               </button>
             </div>
             <div class="card-img">
-              <img src="../../../public/images/cardimg4.svg" alt="">
+              <img src="../../../public/images/cardimg4.svg" alt="" />
             </div>
           </div>
         </div>
-      </Container>
-    </div>
-  </section>
+
+      </div>
+    </section>
+  </Container>
 </template>
+
 
 
 <style lang="scss" scoped>
 .section-service {
   background-color: #F9F9F9;
-  padding: 80px 32px;
+  padding: 80px 0;
   font-family: inter;
-
+  width: 100% !important;
   &__outlay {
     background-color: white;
     border: 1px solid #F0F0F0;
